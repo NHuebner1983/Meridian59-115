@@ -1,0 +1,2020 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Meridian59.Ogre.Client, Version=1.0.5.3, Culture=neutral, PublicKeyToken=1225cfdeb89f7c66: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Meridian59.AdminUI, Version=1.3.0.1, Culture=neutral, PublicKeyToken=1225cfdeb89f7c66: 
+	hash=None, flags=None
+Assembly Meridian59, Version=1.2.6.3, Culture=neutral, PublicKeyToken=1225cfdeb89f7c66: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class Meridian59.Ogre.StringConvert: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed
+  Methods:
+    CLRToOgre(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, String): PrivateScope, Public, Static, HideBySig
+    CLRToOgrePtr(String): PrivateScope, Public, Static, HideBySig
+    OgreToCLR(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig
+    CEGUIToCLR(String* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig
+    CLRToCEGUI(String*, String): PrivateScope, Public, Static, HideBySig
+    CLRToCEGUIPtr(String): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.RemoteNode: AutoLayout, AnsiClass, Class, Public, Abstract
+    Void .ctor(Meridian59.Data.Models.RoomObject, Ogre.SceneManager*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    Single MAXLIGHTRENDERDISTANCE = 20000 : Public, Static, Literal, HasDefault
+    System.String MODULENAME = RemoteNode : Public, Static, Literal, HasDefault
+  Properties:
+    Ogre.SceneManager* SceneManager 'get set' : 
+    Boolean IsAvatar 'get ' : 
+    std.list<irrklang::ISound \*\,std::allocator<irrklang::ISound \*> >* Sounds 'get set' : 
+    Ogre.Light* Light 'get set' : 
+    Ogre.SceneNode* SceneNode 'get set' : 
+    Meridian59.Data.Models.RoomObject RoomObject 'get set' : 
+  Methods:
+    get_RoomObject(): PrivateScope, Public, HideBySig, SpecialName
+    get_SceneNode(): PrivateScope, Public, HideBySig, SpecialName
+    get_Light(): PrivateScope, Public, HideBySig, SpecialName
+    get_Sounds(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsAvatar(): PrivateScope, Public, HideBySig, SpecialName
+    get_SceneManager(): PrivateScope, Public, HideBySig, SpecialName
+    RefreshOrientation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RefreshPosition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetVisible(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    AddSound(ISound*): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class Meridian59.Ogre.ControllerSound: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed
+  Fields:
+    Boolean IsInitialized : Public, Static
+  Properties:
+    std.list<irrklang::ISound \*\,std::allocator<irrklang::ISound \*> >* Sounds 'get set' : 
+  Methods:
+    get_Sounds(): PrivateScope, Public, Static, HideBySig, SpecialName
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    StartMusic(PlayMusic): PrivateScope, Public, Static, HideBySig
+    SetListenerNode(RemoteNode): PrivateScope, Public, Static, HideBySig
+    AdjustMusicVolume(): PrivateScope, Public, Static, HideBySig
+    AdjustSoundVolume(): PrivateScope, Public, Static, HideBySig
+    HandleGameModeMessage(GameModeMessage): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.OISKeyBinding: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 RightClickAction : Public
+    OIS.KeyCode MoveForward : Public
+    OIS.KeyCode MoveBackward : Public
+    OIS.KeyCode MoveLeft : Public
+    OIS.KeyCode MoveRight : Public
+    OIS.KeyCode RotateLeft : Public
+    OIS.KeyCode RotateRight : Public
+    OIS.KeyCode Walk : Public
+    OIS.KeyCode AutoMove : Public
+    OIS.KeyCode NextTarget : Public
+    OIS.KeyCode SelfTarget : Public
+    OIS.KeyCode ReqGo : Public
+    OIS.KeyCode Close : Public
+    OIS.KeyCode ActionButton01 : Public
+    OIS.KeyCode ActionButton02 : Public
+    OIS.KeyCode ActionButton03 : Public
+    OIS.KeyCode ActionButton04 : Public
+    OIS.KeyCode ActionButton05 : Public
+    OIS.KeyCode ActionButton06 : Public
+    OIS.KeyCode ActionButton07 : Public
+    OIS.KeyCode ActionButton08 : Public
+    OIS.KeyCode ActionButton09 : Public
+    OIS.KeyCode ActionButton10 : Public
+    OIS.KeyCode ActionButton11 : Public
+    OIS.KeyCode ActionButton12 : Public
+    OIS.KeyCode ActionButton13 : Public
+    OIS.KeyCode ActionButton14 : Public
+    OIS.KeyCode ActionButton15 : Public
+    OIS.KeyCode ActionButton16 : Public
+    OIS.KeyCode ActionButton17 : Public
+    OIS.KeyCode ActionButton18 : Public
+    OIS.KeyCode ActionButton19 : Public
+    OIS.KeyCode ActionButton20 : Public
+    OIS.KeyCode ActionButton21 : Public
+    OIS.KeyCode ActionButton22 : Public
+    OIS.KeyCode ActionButton23 : Public
+    OIS.KeyCode ActionButton24 : Public
+    OIS.KeyCode ActionButton25 : Public
+    OIS.KeyCode ActionButton26 : Public
+    OIS.KeyCode ActionButton27 : Public
+    OIS.KeyCode ActionButton28 : Public
+    OIS.KeyCode ActionButton29 : Public
+    OIS.KeyCode ActionButton30 : Public
+    OIS.KeyCode ActionButton31 : Public
+    OIS.KeyCode ActionButton32 : Public
+    OIS.KeyCode ActionButton33 : Public
+    OIS.KeyCode ActionButton34 : Public
+    OIS.KeyCode ActionButton35 : Public
+    OIS.KeyCode ActionButton36 : Public
+    OIS.KeyCode ActionButton37 : Public
+    OIS.KeyCode ActionButton38 : Public
+    OIS.KeyCode ActionButton39 : Public
+    OIS.KeyCode ActionButton40 : Public
+    OIS.KeyCode ActionButton41 : Public
+    OIS.KeyCode ActionButton42 : Public
+    OIS.KeyCode ActionButton43 : Public
+    OIS.KeyCode ActionButton44 : Public
+    OIS.KeyCode ActionButton45 : Public
+    OIS.KeyCode ActionButton46 : Public
+    OIS.KeyCode ActionButton47 : Public
+    OIS.KeyCode ActionButton48 : Public
+  Methods:
+    IsMovementKey(KeyCode): PrivateScope, Public, HideBySig
+    IsRotateKey(KeyCode): PrivateScope, Public, HideBySig
+    GetDefault(): PrivateScope, Public, Static, HideBySig
+Struct Meridian59.Ogre.OISKeyListener: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.OISMouseListener: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Class Meridian59.Ogre.Util: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    ToOgre(Vector2*, V2&): PrivateScope, Public, Static, HideBySig
+    ToOgre(Vector3*, V3&): PrivateScope, Public, Static, HideBySig
+    ToV3(Vector3* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig
+    ToV3(Vector3* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig
+    ToOgreYZFlipped(Vector3*, V3&): PrivateScope, Public, Static, HideBySig
+    ToV3YZFlipped(Vector3* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig
+    ToV3YZFlipped(Vector3* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig
+    ToOgreXYFlipped(Vector2*, V2&): PrivateScope, Public, Static, HideBySig
+    ToV2(Vector2*): PrivateScope, Public, Static, HideBySig
+    ToRadianAngle(Quaternion* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig
+    SetOrientationFromAngle(SceneNode* IsImplicitlyDereferenced, Single): PrivateScope, Public, Static, HideBySig
+    ToEulerAngles(Quaternion* IsImplicitlyDereferenced, Radian* IsImplicitlyDereferenced, Radian* IsImplicitlyDereferenced, Radian* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig
+    LightColorToOgreRGB(ColourValue*, UInt16): PrivateScope, Public, Static, HideBySig
+    LightIntensityToOgreRGB(ColourValue*, Byte): PrivateScope, Public, Static, HideBySig
+    UpdateFromILightOwner(Light* IsImplicitlyDereferenced, ILightOwner): PrivateScope, Public, Static, HideBySig
+    CreateLight(ILightOwner, SceneManager*, basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig
+    CreatePalettesTexture(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced, basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig
+    CreateTextureA8(BgfBitmap, basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced, basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig
+    CreateTextureA8R8G8B8(BgfBitmap, basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced, basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced, Int32): PrivateScope, Public, Static, HideBySig
+    CreateTexture(Bitmap, basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced, basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig
+    CreateCEGUITextureFromOgre(OgreRenderer*, SharedPtr<Ogre::Texture>*): PrivateScope, Public, Static, HideBySig
+    CreateMaterialLabel(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced, basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced, basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced, Vector4*): PrivateScope, Public, Static, HideBySig
+    CreateMaterial(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced, basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced, basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced, Vector2*, Vector4*, Boolean(HasFieldMarshal) IsConst): PrivateScope, Public, Static, HideBySig
+    CreateMaterialWater(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced, basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced, basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced, Vector2*): PrivateScope, Public, Static, HideBySig
+    CreateMaterialInvisible(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced, basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced, basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig
+    DataPtrToStream(SharedPtr<Ogre::DataStream>*): PrivateScope, Public, Static, HideBySig
+    GetSceneNodeHeight(SceneNode*): PrivateScope, Public, Static, HideBySig
+    GetScreenspaceCoords(MovableObject*, Camera*, Vector2* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig
+    ExportMaterials(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.TextureInfoOgre: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* MaterialNameDefault : Public
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* MaterialNameBlack : Public
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* MaterialNameTarget : Public
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* MaterialNameMouseOver : Public
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* MaterialNameTranslucent25 : Public
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* MaterialNameTranslucent50 : Public
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* MaterialNameTranslucent75 : Public
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* MaterialNameInvisible : Public
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* TextureName : Public
+  Methods:
+    Delete(): PrivateScope, Public, HideBySig
+Class Meridian59.Ogre.ImageComposerOgre`1[T]: AutoLayout, AnsiClass, Class, Public
+  Type parameter: T, Meridian59.Data.Models.ObjectBase
+  :Meridian59.Drawing2D.ImageComposer`2[T,Meridian59.Ogre.TextureInfoOgre]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String TEXTUREPREFIX = RemoteNode2D/Texture/ : Public, Static, Literal, HasDefault
+    System.String MATERIALPREFIX = RemoteNode2D/Material/ : Public, Static, Literal, HasDefault
+    UInt32 BYTESPERPIXEL = 4 : Public, Static, Literal, HasDefault
+Class Meridian59.Ogre.RemoteNode2D: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Meridian59.Ogre.RemoteNode
+    Void .ctor(Meridian59.Data.Models.RoomObject, Ogre.SceneManager*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    RefreshPosition(): PrivateScope, Public, Virtual, HideBySig
+Class Meridian59.Ogre.MeshInfo: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, Boolean, Ogre.Quaternion*, Ogre.Vector3*, Ogre.Vector3*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Properties:
+    Boolean CastShadows 'get set' : 
+    Ogre.Vector3* LightPosition 'get set' : 
+    Ogre.Vector3* Scale 'get set' : 
+    Ogre.Quaternion* Orientation 'get set' : 
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* MeshFile 'get set' : 
+  Methods:
+    get_MeshFile(): PrivateScope, Public, HideBySig, SpecialName
+    get_Orientation(): PrivateScope, Public, HideBySig, SpecialName
+    get_Scale(): PrivateScope, Public, HideBySig, SpecialName
+    get_LightPosition(): PrivateScope, Public, HideBySig, SpecialName
+    get_CastShadows(): PrivateScope, Public, HideBySig, SpecialName
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class Meridian59.Ogre.MeshHotspot: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(SByte, Ogre.Vector3*, Ogre.Quaternion*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Properties:
+    Ogre.Quaternion* Orientation 'get set' : 
+    Ogre.Vector3* Position 'get set' : 
+    SByte Index 'get set' : 
+  Methods:
+    get_Index(): PrivateScope, Public, HideBySig, SpecialName
+    get_Position(): PrivateScope, Public, HideBySig, SpecialName
+    get_Orientation(): PrivateScope, Public, HideBySig, SpecialName
+    Find(SByte, IEnumerable`1): PrivateScope, Public, Static, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class Meridian59.Ogre.ParticleSystemInfo: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, Ogre.Vector3*, Int32[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Properties:
+    ParticleUniverse.ParticleSystem* ParticleSystem 'get set' : 
+    Int32[] Groups 'get set' : 
+    Ogre.Vector3* Position 'get set' : 
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* Material 'get set' : 
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* TemplateValue 'get set' : 
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* Name 'get set' : 
+  Methods:
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    get_TemplateValue(): PrivateScope, Public, HideBySig, SpecialName
+    get_Material(): PrivateScope, Public, HideBySig, SpecialName
+    get_Position(): PrivateScope, Public, HideBySig, SpecialName
+    get_Groups(): PrivateScope, Public, HideBySig, SpecialName
+    get_ParticleSystem(): PrivateScope, Public, HideBySig, SpecialName
+    set_ParticleSystem(ParticleSystem*): PrivateScope, Public, HideBySig, SpecialName
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class Meridian59.Ogre.XmlReaderExtensions: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed
+  Fields:
+    System.Globalization.NumberFormatInfo NumberFormatInfo : Public, Static
+    System.String ATTRIB_COUNT = count : Public, Static, Literal, HasDefault
+    System.String ATTRIB_ENABLED = enabled : Public, Static, Literal, HasDefault
+  Methods:
+    ReadColor(ColourValue*, XmlReader): PrivateScope, Public, Static, HideBySig
+    ReadVector3(Vector3*, XmlReader): PrivateScope, Public, Static, HideBySig
+    ReadQuaternion(Quaternion*, XmlReader): PrivateScope, Public, Static, HideBySig
+    ReadCount(XmlReader): PrivateScope, Public, Static, HideBySig
+    ReadEnabled(XmlReader): PrivateScope, Public, Static, HideBySig
+    ReadFloat(XmlReader, String): PrivateScope, Public, Static, HideBySig
+    ReadBoolean(XmlReader, String): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.Model3DInfo: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Xml.Serialization.IXmlSerializable
+    System.IDisposable
+  Fields:
+    System.String TAG_MODEL = model : Public, Static, Literal, HasDefault
+    System.String TAG_MESH = mesh : Public, Static, Literal, HasDefault
+    System.String TAG_HOTSPOTS = hotspots : Public, Static, Literal, HasDefault
+    System.String TAG_HOTSPOT = hotspot : Public, Static, Literal, HasDefault
+    System.String TAG_PARTICLES = particles : Public, Static, Literal, HasDefault
+    System.String TAG_PARTICLE = particle : Public, Static, Literal, HasDefault
+    System.String ATTRIB_INDEX = index : Public, Static, Literal, HasDefault
+  Properties:
+    Meridian59.Ogre.ParticleSystemInfo[] ParticleSystemsData 'get set' : 
+    Meridian59.Ogre.MeshHotspot[] Hotspots 'get set' : 
+    Meridian59.Ogre.MeshInfo MeshInfo 'get set' : 
+  Methods:
+    get_MeshInfo(): PrivateScope, Public, HideBySig, SpecialName
+    get_Hotspots(): PrivateScope, Public, HideBySig, SpecialName
+    get_ParticleSystemsData(): PrivateScope, Public, HideBySig, SpecialName
+    GetSchema(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ReadXml(XmlReader): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    WriteXml(XmlWriter): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class Meridian59.Ogre.RemoteNode3DSub: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Meridian59.Data.Models.SubOverlay, Ogre.SceneNode*, Meridian59.Ogre.RemoteNode3D, Meridian59.Ogre.MeshHotspot): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String ID 'get ' : 
+    System.Collections.Generic.List`1[Meridian59.Ogre.RemoteNode3DSub] SubNodes 'get set' : 
+    Meridian59.Ogre.MeshHotspot AttachedHotspot 'get set' : 
+    Ogre.SceneNode* Parent 'get set' : 
+    Meridian59.Ogre.RemoteNode3D RootNode 'get set' : 
+    Meridian59.Data.Models.SubOverlay SubOverlay 'get set' : 
+    Meridian59.Ogre.Model3DInfo Model3DInfo 'get set' : 
+    std.vector<ParticleUniverse::ParticleSystem \*\,std::allocator<ParticleUniverse::ParticleSystem \*> >* ParticleSystems 'get set' : 
+    Ogre.SceneNode* SceneNode 'get set' : 
+    Ogre.Entity* Entity 'get set' : 
+  Methods:
+    get_Entity(): PrivateScope, Public, HideBySig, SpecialName
+    get_SceneNode(): PrivateScope, Public, HideBySig, SpecialName
+    get_ParticleSystems(): PrivateScope, Public, HideBySig, SpecialName
+    get_Model3DInfo(): PrivateScope, Public, HideBySig, SpecialName
+    get_SubOverlay(): PrivateScope, Public, HideBySig, SpecialName
+    get_RootNode(): PrivateScope, Public, HideBySig, SpecialName
+    get_Parent(): PrivateScope, Public, HideBySig, SpecialName
+    get_AttachedHotspot(): PrivateScope, Public, HideBySig, SpecialName
+    get_SubNodes(): PrivateScope, Public, HideBySig, SpecialName
+    get_ID(): PrivateScope, Public, HideBySig, SpecialName
+    Destroy(): PrivateScope, Public, HideBySig
+Class Meridian59.Ogre.RemoteNode3D: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Meridian59.Ogre.RemoteNode
+    Void .ctor(Meridian59.Data.Models.RoomObject, Ogre.SceneManager*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Collections.Generic.List`1[Meridian59.Ogre.RemoteNode3DSub] SubNodes 'get set' : 
+    Meridian59.Ogre.Model3DInfo Model3DInfo 'get set' : 
+    Ogre.Entity* Entity 'get set' : 
+  Methods:
+    get_Entity(): PrivateScope, Public, HideBySig, SpecialName
+    get_Model3DInfo(): PrivateScope, Public, HideBySig, SpecialName
+    get_SubNodes(): PrivateScope, Public, HideBySig, SpecialName
+Struct Meridian59.Ogre.WeatherParticleEventHandler: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Class Meridian59.Ogre.ControllerRoom: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed
+  Fields:
+    Boolean IsInitialized : Public, Static
+  Properties:
+    Ogre.SceneManager* SceneManager 'get ' : 
+    Meridian59.Files.ROO.RooFile Room 'get ' : 
+    Meridian59.Ogre.RemoteNode AvatarObject 'get set' : 
+    Ogre.ManualObject* RoomManualObject 'get set' : 
+    Caelum.CaelumSystem* CaelumSystem 'get set' : 
+  Methods:
+    get_CaelumSystem(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_RoomManualObject(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_AvatarObject(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Room(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_SceneManager(): PrivateScope, Public, Static, HideBySig, SpecialName
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    InitCaelum(): PrivateScope, Public, Static, HideBySig
+    DestroyCaelum(): PrivateScope, Public, Static, HideBySig
+    UpdateSky(): PrivateScope, Public, Static, HideBySig
+    LoadRoom(): PrivateScope, Public, Static, HideBySig
+    UnloadRoom(): PrivateScope, Public, Static, HideBySig
+    Tick(Double, Double): PrivateScope, Public, Static, HideBySig
+    HandleGameModeMessage(GameModeMessage): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerInput: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed
+  Properties:
+    Boolean IsSelfTargetDown 'get ' : 
+    Boolean IsRotateKeyDown 'get ' : 
+    Boolean IsMovementInput 'get ' : 
+    Boolean IsWalkKeyDown 'get ' : 
+    Boolean IsBothMouseDown 'get ' : 
+    Boolean IsAnyMouseDown 'get ' : 
+    Boolean IsRightMouseDown 'get ' : 
+    Boolean IsLeftMouseDown 'get ' : 
+    Meridian59.Ogre.OISKeyBinding ActiveKeyBinding 'get ' : 
+    Boolean IsMouseInWindow 'get set' : 
+    Boolean IsCameraFirstPerson 'get set' : 
+    Boolean IsAiming 'get set' : 
+    Boolean IsInitialized 'get set' : 
+    OIS.Mouse* OISMouse 'get set' : 
+    OIS.Keyboard* OISKeyboard 'get set' : 
+    OIS.InputManager* InputManager 'get set' : 
+  Methods:
+    get_InputManager(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_OISKeyboard(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_OISMouse(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_IsInitialized(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_IsAiming(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_IsCameraFirstPerson(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_IsMouseInWindow(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_ActiveKeyBinding(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_IsLeftMouseDown(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_IsRightMouseDown(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_IsAnyMouseDown(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_IsBothMouseDown(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_IsWalkKeyDown(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_IsMovementInput(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_IsRotateKeyDown(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_IsSelfTargetDown(): PrivateScope, Public, Static, HideBySig, SpecialName
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    SetDisplaySize(): PrivateScope, Public, Static, HideBySig
+    OISMouse_MouseReleased(MouseEvent* IsImplicitlyDereferenced, MouseButtonID): PrivateScope, Public, Static, HideBySig
+    OISMouse_MousePressed(MouseEvent* IsImplicitlyDereferenced, MouseButtonID): PrivateScope, Public, Static, HideBySig
+    OISMouse_MouseMoved(MouseEvent* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig
+    OISKeyboard_KeyPressed(KeyEvent* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig
+    OISKeyboard_KeyReleased(KeyEvent* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig
+    SetAvatarOrientationFromCamera(): PrivateScope, Public, Static, HideBySig
+    PerformMouseOver(Int32, Int32, Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    Tick(Double, Double): PrivateScope, Public, Static, HideBySig
+Struct Meridian59.Ogre.MyFrameListener: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.MyWindowEventListener: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.CameraListener: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.CompositorPainListener: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.CompositorWhiteoutListener: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.LoadingBarResourceGroupListener: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Class Meridian59.Ogre.ControllerEffects: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed
+  Fields:
+    Boolean IsInitialized : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.TextureInfoCEGUI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    CEGUI.String* TextureName : Public
+  Methods:
+    Delete(): PrivateScope, Public, HideBySig
+Class Meridian59.Ogre.ImageComposerCEGUI`1[T]: AutoLayout, AnsiClass, Class, Public
+  Type parameter: T, Meridian59.Data.Models.ObjectBase
+  :Meridian59.Drawing2D.ImageComposer`2[T,Meridian59.Ogre.TextureInfoCEGUI]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 BYTESPERPIXEL = 4 : Public, Static, Literal, HasDefault
+Class Meridian59.Ogre.ControllerUI: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed
+  Fields:
+    Boolean IsInitialized : Public, Static
+  Properties:
+    CEGUI.MouseCursor* MouseCursor 'get set' : 
+    Boolean IgnoreTopControlForMouseInput 'get ' : 
+    CEGUI.Window* DraggedWindow 'get set' : 
+    Boolean ProcessingInput 'get set' : 
+    CEGUI.Window* MovingWindow 'get set' : 
+    CEGUI.Window* FocusedControl 'get set' : 
+    CEGUI.Window* TopControl 'get set' : 
+    CEGUI.Window* GUIRoot 'get set' : 
+    CEGUI.System* System 'get set' : 
+    CEGUI.OgreRenderer* Renderer 'get set' : 
+  Methods:
+    Initialize(RenderTarget*): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    ApplyLock(): PrivateScope, Public, Static, HideBySig
+    Tick(Double, Double): PrivateScope, Public, Static, HideBySig
+    ToggleVisibility(Window*): PrivateScope, Public, Static, HideBySig
+    IsRecursiveChildOf(Window*, Window*): PrivateScope, Public, Static, HideBySig
+    ActivateRoot(): PrivateScope, Public, Static, HideBySig
+    PasteFromClipboard(Window*): PrivateScope, Public, Static, HideBySig
+    CopyToClipboard(Window*, Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig
+    SaveLayoutToConfig(): PrivateScope, Public, Static, HideBySig
+    OnDataPropertyChanged(Object, PropertyChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    InjectMousePosition(Single, Single): PrivateScope, Public, Static, HideBySig
+    InjectMouseWheelChange(Single): PrivateScope, Public, Static, HideBySig
+    InjectMouseButtonDown(MouseButton): PrivateScope, Public, Static, HideBySig
+    InjectMouseButtonUp(MouseButton): PrivateScope, Public, Static, HideBySig
+    InjectKeyDown(Scan): PrivateScope, Public, Static, HideBySig
+    InjectKeyUp(Scan): PrivateScope, Public, Static, HideBySig
+    InjectChar(Scan): PrivateScope, Public, Static, HideBySig
+    SetVUMeterColorFromProgress(ProgressBar*): PrivateScope, Public, Static, HideBySig
+    BuildIconAtlas(): PrivateScope, Public, Static, HideBySig
+    get_Renderer(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_System(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_GUIRoot(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_TopControl(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_FocusedControl(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_MovingWindow(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_MovingWindow(Window*): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_ProcessingInput(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DraggedWindow(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_DraggedWindow(Window*): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_IgnoreTopControlForMouseInput(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_MouseCursor(): PrivateScope, Public, Static, HideBySig, SpecialName
+Class Meridian59.Ogre.ControllerUI+LoadingBar: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.Window* Window : Public, Static
+    CEGUI.ProgressBar* Group : Public, Static
+    CEGUI.ProgressBar* Content : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    Start(UInt16): PrivateScope, Public, Static, HideBySig
+    Finish(): PrivateScope, Public, Static, HideBySig
+    ResourceGroupScriptingStarted(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, UInt32): PrivateScope, Public, Static, HideBySig
+    ScriptParseStarted(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, Boolean* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig
+    ScriptParseEnded(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig
+    ResourceGroupLoadStarted(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, UInt32): PrivateScope, Public, Static, HideBySig
+    ResourceGroupPrepareStarted(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, UInt32): PrivateScope, Public, Static, HideBySig
+    ResourceLoadStarted(SharedPtr<Ogre::Resource>*): PrivateScope, Public, Static, HideBySig
+    WorldGeometryStageStarted(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*): PrivateScope, Public, Static, HideBySig
+    WorldGeometryStageEnded(): PrivateScope, Public, Static, HideBySig
+    OnPreloadingGroupStarted(Object, EventArgs): PrivateScope, Public, Static, HideBySig
+    OnPreloadingGroupEnded(Object, EventArgs): PrivateScope, Public, Static, HideBySig
+    OnPreloadingFile(Object, StringEventArgs): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+DownloadBar: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.Window* Window : Public, Static
+    CEGUI.ProgressBar* Content : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    Start(): PrivateScope, Public, Static, HideBySig
+    Finish(): PrivateScope, Public, Static, HideBySig
+    OnDownloadStarted(Object, EventArgs): PrivateScope, Public, Static, HideBySig
+    OnDownloadFinished(Object, StringEventArgs): PrivateScope, Public, Static, HideBySig
+    OnDownloadFile(Object, StringEventArgs): PrivateScope, Public, Static, HideBySig
+    OnDownloadProgress(Object, IntegerEventArgs): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+Welcome: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.Window* Window : Public, Static
+    CEGUI.ItemListbox* Avatars : Public, Static
+    CEGUI.PushButton* Select : Public, Static
+    CEGUI.MultiLineEditbox* MOTD : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    OnCharactersListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnWelcomeInfoPropertyChanged(Object, PropertyChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    CharacterAdd(Int32): PrivateScope, Public, Static, HideBySig
+    CharacterRemove(Int32): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+StatusBar: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.Window* Window : Public, Static
+    CEGUI.Window* FPSDescription : Public, Static
+    CEGUI.Window* FPSValue : Public, Static
+    CEGUI.Window* RTTDescription : Public, Static
+    CEGUI.Window* RTTValue : Public, Static
+    CEGUI.Window* PlayersDescription : Public, Static
+    CEGUI.PushButton* PlayersValue : Public, Static
+    CEGUI.Window* MoodDescription : Public, Static
+    CEGUI.PushButton* MoodHappy : Public, Static
+    CEGUI.PushButton* MoodNeutral : Public, Static
+    CEGUI.PushButton* MoodSad : Public, Static
+    CEGUI.PushButton* MoodAngry : Public, Static
+    CEGUI.Window* SafetyDescription : Public, Static
+    CEGUI.PushButton* SafetyValue : Public, Static
+    CEGUI.Window* MTimeDescription : Public, Static
+    CEGUI.Window* MTimeValue : Public, Static
+    CEGUI.Window* RoomDescription : Public, Static
+    CEGUI.Window* RoomValue : Public, Static
+    CEGUI.PushButton* Lock : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    OnDataPropertyChanged(Object, PropertyChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnClientPreferencesChanged(Object, PropertyChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnRoomInformationPropertyChanged(Object, PropertyChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnOnlinePlayersListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+OnlinePlayers: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.FrameWindow* Window : Public, Static
+    CEGUI.ItemListbox* List : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    SetTooltip(Window*, OnlinePlayer): PrivateScope, Public, Static, HideBySig
+    OnOnlinePlayersListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnlinePlayerAdd(Int32): PrivateScope, Public, Static, HideBySig
+    OnlinePlayerRemove(Int32): PrivateScope, Public, Static, HideBySig
+    OnlinePlayerChange(Int32): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+RoomObjects: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.FrameWindow* Window : Public, Static
+    CEGUI.ItemListbox* List : Public, Static
+    CEGUI.ToggleButton* ShowAll : Public, Static
+    CEGUI.ToggleButton* ShowGuild : Public, Static
+    CEGUI.ToggleButton* ShowEnemy : Public, Static
+    CEGUI.ToggleButton* ShowFriend : Public, Static
+    CEGUI.ToggleButton* ShowAttack : Public, Static
+    CEGUI.ToggleButton* ShowGet : Public, Static
+    CEGUI.ToggleButton* ShowMinion : Public, Static
+    CEGUI.ToggleButton* ShowPK : Public, Static
+    CEGUI.ToggleButton* ShowBuy : Public, Static
+    Boolean FlippedbyAll : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    OnRoomObjectsFilteredListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnDataPropertyChanged(Object, PropertyChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    RoomObjectAdd(Int32): PrivateScope, Public, Static, HideBySig
+    RoomObjectRemove(Int32): PrivateScope, Public, Static, HideBySig
+    RoomObjectChange(Int32): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+Chat: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.FrameWindow* Window : Public, Static
+    CEGUI.Window* Text : Public, Static
+    CEGUI.MultiLineEditbox* TextPlain : Public, Static
+    CEGUI.Editbox* Input : Public, Static
+    CEGUI.Scrollbar* Scrollbar : Public, Static
+    CEGUI.Scrollbar* ScrollbarPlain : Public, Static
+    System.Collections.Generic.Queue`1[Meridian59.Data.Models.ServerString] Queue : Public, Static
+    UInt32 DeleteCounter : Public, Static
+    Boolean PlainMode : Public, Static
+    Boolean ChatForceRenew : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    Tick(Double, Double): PrivateScope, Public, Static, HideBySig
+    GetChatString(String*, ServerString): PrivateScope, Public, Static, HideBySig
+    OnChatMessagesListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+Avatar: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.Window* Window : Public, Static
+    CEGUI.Window* Head : Public, Static
+    CEGUI.GridLayoutContainer* Enchantments : Public, Static
+    CEGUI.VerticalLayoutContainer* Conditions : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    OnDataPropertyChanged(Object, PropertyChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnNewHeadImageAvailable(Object, EventArgs): PrivateScope, Public, Static, HideBySig
+    OnNewBuffImageAvailable(Object, EventArgs): PrivateScope, Public, Static, HideBySig
+    OnBuffListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnConditionListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    BuffAdd(Int32): PrivateScope, Public, Static, HideBySig
+    BuffRemove(Int32): PrivateScope, Public, Static, HideBySig
+    ConditionAdd(Int32): PrivateScope, Public, Static, HideBySig
+    ConditionRemove(Int32): PrivateScope, Public, Static, HideBySig
+    ConditionChange(Int32): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+ObjectDetails: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.FrameWindow* Window : Public, Static
+    CEGUI.Window* Image : Public, Static
+    CEGUI.Window* Name : Public, Static
+    CEGUI.MultiLineEditbox* Description : Public, Static
+    CEGUI.MultiLineEditbox* Inscription : Public, Static
+    CEGUI.PushButton* OK : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    OnNewImageAvailable(Object, EventArgs): PrivateScope, Public, Static, HideBySig
+    OnLookObjectPropertyChanged(Object, PropertyChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    SetLayout(LookTypeFlags): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+SpellDetails: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.FrameWindow* Window : Public, Static
+    CEGUI.Window* Image : Public, Static
+    CEGUI.Window* Name : Public, Static
+    CEGUI.Window* SchoolName : Public, Static
+    CEGUI.Window* SpellLevel : Public, Static
+    CEGUI.Window* ManaCost : Public, Static
+    CEGUI.Window* VigorCost : Public, Static
+    CEGUI.MultiLineEditbox* Description : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    OnNewImageAvailable(Object, EventArgs): PrivateScope, Public, Static, HideBySig
+    OnLookSpellObjectPropertyChanged(Object, PropertyChangedEventArgs): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+SkillDetails: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.FrameWindow* Window : Public, Static
+    CEGUI.Window* Image : Public, Static
+    CEGUI.Window* Name : Public, Static
+    CEGUI.Window* SchoolName : Public, Static
+    CEGUI.Window* SkillLevel : Public, Static
+    CEGUI.MultiLineEditbox* Description : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    OnNewImageAvailable(Object, EventArgs): PrivateScope, Public, Static, HideBySig
+    OnLookSkillObjectPropertyChanged(Object, PropertyChangedEventArgs): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+PlayerDetails: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.FrameWindow* Window : Public, Static
+    CEGUI.Window* Image : Public, Static
+    CEGUI.Window* Name : Public, Static
+    CEGUI.Window* Titles : Public, Static
+    CEGUI.MultiLineEditbox* Description : Public, Static
+    CEGUI.Window* HomepageDescription : Public, Static
+    CEGUI.Editbox* HomepageValue : Public, Static
+    CEGUI.PushButton* OK : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    OnNewImageAvailable(Object, EventArgs): PrivateScope, Public, Static, HideBySig
+    OnLookPlayerPropertyChanged(Object, PropertyChangedEventArgs): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+Target: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.Window* Window : Public, Static
+    CEGUI.Window* Image : Public, Static
+    CEGUI.Window* Name : Public, Static
+    CEGUI.HorizontalLayoutContainer* Layout : Public, Static
+    CEGUI.PushButton* Inspect : Public, Static
+    CEGUI.PushButton* Attack : Public, Static
+    CEGUI.PushButton* Activate : Public, Static
+    CEGUI.PushButton* Buy : Public, Static
+    CEGUI.PushButton* Trade : Public, Static
+    CEGUI.PushButton* Loot : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    SetButtons(): PrivateScope, Public, Static, HideBySig
+    OnDataPropertyChanged(Object, PropertyChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnTargetObjectPropertyChanged(Object, PropertyChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnNewImageAvailable(Object, EventArgs): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+SplashNotifier: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.Window* Window : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    UpdateNotification(): PrivateScope, Public, Static, HideBySig
+    ShowNotification(String): PrivateScope, Public, Static, HideBySig
+    HideNotification(String): PrivateScope, Public, Static, HideBySig
+    OnDataPropertyChanged(Object, PropertyChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnParalyzePropertyChanged(Object, PropertyChangedEventArgs): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+MiniMap: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.Window* Window : Public, Static
+    CEGUI.Window* DrawSurface : Public, Static
+    Single Zoom : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    IsMouseOnCircle(): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+RoomEnchantments: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.Window* Window : Public, Static
+    CEGUI.GridLayoutContainer* Grid : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    OnNewBuffImageAvailable(Object, EventArgs): PrivateScope, Public, Static, HideBySig
+    OnBuffListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    BuffAdd(Int32): PrivateScope, Public, Static, HideBySig
+    BuffRemove(Int32): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+Buy: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.FrameWindow* Window : Public, Static
+    CEGUI.ItemListbox* List : Public, Static
+    CEGUI.PushButton* OK : Public, Static
+    CEGUI.Window* SumDescription : Public, Static
+    CEGUI.Window* SumValue : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    CalculateSum(): PrivateScope, Public, Static, HideBySig
+    OnBuyPropertyChanged(Object, PropertyChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnBuyListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnNewBuyItemImageAvailable(Object, EventArgs): PrivateScope, Public, Static, HideBySig
+    BuyItemAdd(Int32): PrivateScope, Public, Static, HideBySig
+    BuyItemRemove(Int32): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+Attributes: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.FrameWindow* Window : Public, Static
+    CEGUI.ItemListbox* List : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    OnAttributesListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    AttributeAdd(Int32): PrivateScope, Public, Static, HideBySig
+    AttributeRemove(Int32): PrivateScope, Public, Static, HideBySig
+    AttributeChange(Int32): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+Skills: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.FrameWindow* Window : Public, Static
+    CEGUI.ItemListbox* List : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    OnSkillsListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    SkillAdd(Int32): PrivateScope, Public, Static, HideBySig
+    SkillRemove(Int32): PrivateScope, Public, Static, HideBySig
+    SkillChange(Int32): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+Spells: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.FrameWindow* Window : Public, Static
+    CEGUI.ItemListbox* List : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    OnSpellsListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    SpellAdd(Int32): PrivateScope, Public, Static, HideBySig
+    SpellRemove(Int32): PrivateScope, Public, Static, HideBySig
+    SpellChange(Int32): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+Quests: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.FrameWindow* Window : Public, Static
+    CEGUI.ItemListbox* List : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    OnQuestsListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    QuestAdd(Int32): PrivateScope, Public, Static, HideBySig
+    QuestRemove(Int32): PrivateScope, Public, Static, HideBySig
+    QuestChange(Int32): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+Actions: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.FrameWindow* Window : Public, Static
+    CEGUI.ItemListbox* List : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+Inventory: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.FrameWindow* Window : Public, Static
+    CEGUI.ScrollablePane* Pane : Public, Static
+    CEGUI.GridLayoutContainer* List : Public, Static
+    Boolean DoClick : Public, Static
+    Meridian59.Data.Models.InventoryObject ClickObject : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    OnNewImageAvailable(Object, EventArgs): PrivateScope, Public, Static, HideBySig
+    OnInventoryListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    InventoryAdd(Int32): PrivateScope, Public, Static, HideBySig
+    InventoryRemove(Int32): PrivateScope, Public, Static, HideBySig
+    InventoryChange(Int32): PrivateScope, Public, Static, HideBySig
+    Tick(Double, Double): PrivateScope, Public, Static, HideBySig
+    SwapImageComposers(UInt32, UInt32): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+MainButtonsLeft: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.Window* Window : Public, Static
+    CEGUI.Window* Chat : Public, Static
+    CEGUI.Window* Inventory : Public, Static
+    CEGUI.Window* Map : Public, Static
+    CEGUI.Window* Spells : Public, Static
+    CEGUI.Window* Skills : Public, Static
+    CEGUI.Window* Actions : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+MainButtonsRight: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.Window* Window : Public, Static
+    CEGUI.Window* RoomObjects : Public, Static
+    CEGUI.Window* Attributes : Public, Static
+    CEGUI.Window* Quests : Public, Static
+    CEGUI.Window* Guild : Public, Static
+    CEGUI.Window* Mail : Public, Static
+    CEGUI.Window* Options : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+Amount: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.FrameWindow* Window : Public, Static
+    CEGUI.Editbox* Value : Public, Static
+    CEGUI.PushButton* OK : Public, Static
+    UInt32 ID : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    Drop(): PrivateScope, Public, Static, HideBySig
+    ShowValues(UInt32, UInt32): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+Trade: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.FrameWindow* Window : Public, Static
+    CEGUI.Window* NameYou : Public, Static
+    CEGUI.Window* NamePartner : Public, Static
+    CEGUI.ItemListbox* ListYou : Public, Static
+    CEGUI.ItemListbox* ListPartner : Public, Static
+    CEGUI.PushButton* Offer : Public, Static
+    CEGUI.PushButton* Accept : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    OnTradePropertyChanged(Object, PropertyChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnItemsYouListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnItemsPartnerListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnNewItemYouImageAvailable(Object, EventArgs): PrivateScope, Public, Static, HideBySig
+    OnNewItemPartnerImageAvailable(Object, EventArgs): PrivateScope, Public, Static, HideBySig
+    ItemYouAdd(Int32): PrivateScope, Public, Static, HideBySig
+    ItemYouRemove(Int32): PrivateScope, Public, Static, HideBySig
+    ItemPartnerAdd(Int32): PrivateScope, Public, Static, HideBySig
+    ItemPartnerRemove(Int32): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+ActionButtons: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.Window* Window : Public, Static
+    CEGUI.GridLayoutContainer* Grid : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    OnNewImageAvailable(Object, EventArgs): PrivateScope, Public, Static, HideBySig
+    OnActionButtonsListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    ActionButtonAdd(Int32): PrivateScope, Public, Static, HideBySig
+    ActionButtonRemove(Int32): PrivateScope, Public, Static, HideBySig
+    ActionButtonChange(Int32): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+NewsGroup: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.FrameWindow* Window : Public, Static
+    CEGUI.MultiColumnList* List : Public, Static
+    CEGUI.Window* HeadLine : Public, Static
+    CEGUI.PushButton* Create : Public, Static
+    CEGUI.PushButton* Respond : Public, Static
+    CEGUI.PushButton* MailAuthor : Public, Static
+    CEGUI.PushButton* Refresh : Public, Static
+    CEGUI.PushButton* Delete : Public, Static
+    CEGUI.MultiLineEditbox* Text : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    OnNewsGroupPropertyChanged(Object, PropertyChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnArticleHeadListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    ArticleHeadAdd(Int32): PrivateScope, Public, Static, HideBySig
+    ArticleHeadRemove(Int32): PrivateScope, Public, Static, HideBySig
+    ArticleHeadChange(Int32): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+NewsGroupCompose: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.FrameWindow* Window : Public, Static
+    CEGUI.Window* GroupDesc : Public, Static
+    CEGUI.Window* Group : Public, Static
+    CEGUI.Window* HeadLineDesc : Public, Static
+    CEGUI.Editbox* HeadLine : Public, Static
+    CEGUI.MultiLineEditbox* Text : Public, Static
+    CEGUI.PushButton* Send : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    OnNewsGroupPropertyChanged(Object, PropertyChangedEventArgs): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+Mail: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.FrameWindow* Window : Public, Static
+    CEGUI.MultiColumnList* List : Public, Static
+    CEGUI.PushButton* Create : Public, Static
+    CEGUI.PushButton* Respond : Public, Static
+    CEGUI.PushButton* RespondAll : Public, Static
+    CEGUI.PushButton* Delete : Public, Static
+    CEGUI.PushButton* Refresh : Public, Static
+    CEGUI.MultiLineEditbox* Text : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    OnMailsListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    MailAdd(Int32): PrivateScope, Public, Static, HideBySig
+    MailRemove(Int32): PrivateScope, Public, Static, HideBySig
+    MailChange(Int32): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+MailCompose: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    System.String[] LastLookupNames : Public, Static
+    CEGUI.FrameWindow* Window : Public, Static
+    CEGUI.Window* Error : Public, Static
+    CEGUI.Window* RecipientsDesc : Public, Static
+    CEGUI.Editbox* Recipients : Public, Static
+    CEGUI.Window* HeadLineDesc : Public, Static
+    CEGUI.Editbox* HeadLine : Public, Static
+    CEGUI.MultiLineEditbox* Text : Public, Static
+    CEGUI.PushButton* Send : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    ProcessResult(ObjectID[]): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+Guild: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.FrameWindow* Window : Public, Static
+    CEGUI.TabControl* TabControl : Public, Static
+    CEGUI.Window* TabMembers : Public, Static
+    CEGUI.Window* TabDiplomacy : Public, Static
+    CEGUI.Window* TabGuildmaster : Public, Static
+    CEGUI.Window* TabShield : Public, Static
+    CEGUI.PushButton* Renounce : Public, Static
+    CEGUI.ItemListbox* ListMembers : Public, Static
+    CEGUI.ItemListbox* ListGuilds : Public, Static
+    CEGUI.Window* PasswordDesc : Public, Static
+    CEGUI.Editbox* PasswordVal : Public, Static
+    CEGUI.PushButton* SetPassword : Public, Static
+    CEGUI.PushButton* AbandonHall : Public, Static
+    CEGUI.Window* NoGuildHall : Public, Static
+    CEGUI.Window* ShieldImage : Public, Static
+    CEGUI.Window* ShieldColor1Desc : Public, Static
+    CEGUI.Slider* ShieldColor1 : Public, Static
+    CEGUI.Window* ShieldColor2Desc : Public, Static
+    CEGUI.Slider* ShieldColor2 : Public, Static
+    CEGUI.Window* ShieldDesignDesc : Public, Static
+    CEGUI.Slider* ShieldDesign : Public, Static
+    CEGUI.Window* ShieldClaimedByDesc : Public, Static
+    CEGUI.Window* ShieldClaimedBy : Public, Static
+    CEGUI.PushButton* ShieldClaim : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    OnGuildInfoPropertyChanged(Object, PropertyChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnGuildShieldInfoPropertyChanged(Object, PropertyChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnMembersListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnGuildsListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnNewShieldImageAvailable(Object, EventArgs): PrivateScope, Public, Static, HideBySig
+    OnExileConfirmed(Object, EventArgs): PrivateScope, Public, Static, HideBySig
+    OnRenounceConfirmed(Object, EventArgs): PrivateScope, Public, Static, HideBySig
+    OnAbdicateConfirmed(Object, EventArgs): PrivateScope, Public, Static, HideBySig
+    OnAbandonHallConfirmed(Object, EventArgs): PrivateScope, Public, Static, HideBySig
+    MemberAdd(Int32): PrivateScope, Public, Static, HideBySig
+    MemberRemove(Int32): PrivateScope, Public, Static, HideBySig
+    MemberChange(Int32): PrivateScope, Public, Static, HideBySig
+    GuildAdd(Int32): PrivateScope, Public, Static, HideBySig
+    GuildRemove(Int32): PrivateScope, Public, Static, HideBySig
+    GuildChange(Int32): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+GuildCreate: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.FrameWindow* Window : Public, Static
+    CEGUI.Window* GuildNameDesc : Public, Static
+    CEGUI.Editbox* GuildName : Public, Static
+    CEGUI.Window* MaleRanksDesc : Public, Static
+    CEGUI.Window* FemaleRanksDesc : Public, Static
+    CEGUI.Editbox* MaleRank1 : Public, Static
+    CEGUI.Editbox* MaleRank2 : Public, Static
+    CEGUI.Editbox* MaleRank3 : Public, Static
+    CEGUI.Editbox* MaleRank4 : Public, Static
+    CEGUI.Editbox* MaleRank5 : Public, Static
+    CEGUI.Editbox* FemaleRank1 : Public, Static
+    CEGUI.Editbox* FemaleRank2 : Public, Static
+    CEGUI.Editbox* FemaleRank3 : Public, Static
+    CEGUI.Editbox* FemaleRank4 : Public, Static
+    CEGUI.Editbox* FemaleRank5 : Public, Static
+    CEGUI.ToggleButton* SecretGuild : Public, Static
+    CEGUI.Window* CostDesc : Public, Static
+    CEGUI.Window* Cost : Public, Static
+    CEGUI.PushButton* Create : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    OnGuildAskDataPropertyChanged(Object, PropertyChangedEventArgs): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+GuildHallBuy: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.FrameWindow* Window : Public, Static
+    CEGUI.MultiColumnList* List : Public, Static
+    CEGUI.PushButton* ButtonBuy : Public, Static
+    CEGUI.PushButton* ButtonCancel : Public, Static
+    CEGUI.Editbox* GuildPassword : Public, Static
+    CEGUI.Window* SelectedHall : Public, Static
+    CEGUI.Window* PasswordInvalid : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    OnGuildHallsInfoPropertyChanged(Object, PropertyChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnGuildHallsListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    GuildHallAdd(Int32): PrivateScope, Public, Static, HideBySig
+    GuildHallRemove(Int32): PrivateScope, Public, Static, HideBySig
+    GuildHallChange(Int32): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+AvatarCreateWizard: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.FrameWindow* Window : Public, Static
+    CEGUI.TabControl* TabControl : Public, Static
+    CEGUI.Window* TabBasic : Public, Static
+    CEGUI.Window* TabAttributes : Public, Static
+    CEGUI.Window* TabSpellsSkills : Public, Static
+    CEGUI.Window* NameDesc : Public, Static
+    CEGUI.Editbox* Name : Public, Static
+    CEGUI.Window* Image : Public, Static
+    CEGUI.Window* GenderDesc : Public, Static
+    CEGUI.RadioButton* GenderMale : Public, Static
+    CEGUI.RadioButton* GenderFemale : Public, Static
+    CEGUI.Window* SkinColorDesc : Public, Static
+    CEGUI.Slider* SkinColor : Public, Static
+    CEGUI.Window* HairDesc : Public, Static
+    CEGUI.Slider* Hair : Public, Static
+    CEGUI.Window* HairColorDesc : Public, Static
+    CEGUI.Slider* HairColor : Public, Static
+    CEGUI.Window* EyesDesc : Public, Static
+    CEGUI.Slider* Eyes : Public, Static
+    CEGUI.Window* NoseDesc : Public, Static
+    CEGUI.Slider* Nose : Public, Static
+    CEGUI.Window* MouthDesc : Public, Static
+    CEGUI.Slider* Mouth : Public, Static
+    CEGUI.Window* DescriptionDesc : Public, Static
+    CEGUI.MultiLineEditbox* Description : Public, Static
+    CEGUI.Window* ProfilesDesc : Public, Static
+    CEGUI.Combobox* Profiles : Public, Static
+    CEGUI.Window* MightDesc : Public, Static
+    CEGUI.ProgressBar* Might : Public, Static
+    CEGUI.Window* IntellectDesc : Public, Static
+    CEGUI.ProgressBar* Intellect : Public, Static
+    CEGUI.Window* StaminaDesc : Public, Static
+    CEGUI.ProgressBar* Stamina : Public, Static
+    CEGUI.Window* AgilityDesc : Public, Static
+    CEGUI.ProgressBar* Agility : Public, Static
+    CEGUI.Window* MysticismDesc : Public, Static
+    CEGUI.ProgressBar* Mysticism : Public, Static
+    CEGUI.Window* AimDesc : Public, Static
+    CEGUI.ProgressBar* Aim : Public, Static
+    CEGUI.Window* AttributesAvailableDesc : Public, Static
+    CEGUI.ProgressBar* AttributesAvailable : Public, Static
+    CEGUI.Window* SpellsDesc : Public, Static
+    CEGUI.ItemListbox* Spells : Public, Static
+    CEGUI.Window* SkillsDesc : Public, Static
+    CEGUI.ItemListbox* Skills : Public, Static
+    CEGUI.Window* SelectedSpellsDesc : Public, Static
+    CEGUI.ItemListbox* SelectedSpells : Public, Static
+    CEGUI.Window* SelectedSkillsDesc : Public, Static
+    CEGUI.ItemListbox* SelectedSkills : Public, Static
+    CEGUI.Window* SkillPointsAvailableDesc : Public, Static
+    CEGUI.ProgressBar* SkillPointsAvailable : Public, Static
+    CEGUI.PushButton* ButtonBack : Public, Static
+    CEGUI.PushButton* ButtonNext : Public, Static
+    CEGUI.Window* DataOK : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    OnCharCreationInfoPropertyChanged(Object, PropertyChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnOKClicked(Object, EventArgs): PrivateScope, Public, Static, HideBySig
+    OnNewHeadImageAvailable(Object, EventArgs): PrivateScope, Public, Static, HideBySig
+    OnSpellsListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnSkillsListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnSelectedSpellsListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnSelectedSkillsListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    SpellAdd(Int32): PrivateScope, Public, Static, HideBySig
+    SpellRemove(Int32): PrivateScope, Public, Static, HideBySig
+    SkillAdd(Int32): PrivateScope, Public, Static, HideBySig
+    SkillRemove(Int32): PrivateScope, Public, Static, HideBySig
+    SelectedSpellAdd(Int32): PrivateScope, Public, Static, HideBySig
+    SelectedSpellRemove(Int32): PrivateScope, Public, Static, HideBySig
+    SelectedSkillAdd(Int32): PrivateScope, Public, Static, HideBySig
+    SelectedSkillRemove(Int32): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+StatChangeWizard: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.FrameWindow* Window : Public, Static
+    CEGUI.DefaultWindow* ConfirmDialog : Public, Static
+    CEGUI.FrameWindow* ConfirmWindow : Public, Static
+    CEGUI.DefaultWindow* ConfirmText : Public, Static
+    CEGUI.DefaultWindow* AttributeWindow : Public, Static
+    CEGUI.DefaultWindow* SchoolWindow : Public, Static
+    CEGUI.TabControl* TabControlAttr : Public, Static
+    CEGUI.TabControl* TabControlSch : Public, Static
+    CEGUI.ProgressBar* Might : Public, Static
+    CEGUI.ProgressBar* Intellect : Public, Static
+    CEGUI.ProgressBar* Stamina : Public, Static
+    CEGUI.ProgressBar* Agility : Public, Static
+    CEGUI.ProgressBar* Mysticism : Public, Static
+    CEGUI.ProgressBar* Aim : Public, Static
+    CEGUI.ProgressBar* AttributesAvailable : Public, Static
+    CEGUI.ProgressBar* ShalilleLevel : Public, Static
+    CEGUI.ProgressBar* QorLevel : Public, Static
+    CEGUI.ProgressBar* KraananLevel : Public, Static
+    CEGUI.ProgressBar* FarenLevel : Public, Static
+    CEGUI.ProgressBar* RiijaLevel : Public, Static
+    CEGUI.ProgressBar* JalaLevel : Public, Static
+    CEGUI.ProgressBar* WCLevel : Public, Static
+    CEGUI.PushButton* ButtonOK : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    OnStatChangeConfirmed(Object, EventArgs): PrivateScope, Public, Static, HideBySig
+    OnStatChangeInfoPropertyChanged(Object, PropertyChangedEventArgs): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+ConfirmPopup: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.DefaultWindow* Window : Public, Static
+    CEGUI.FrameWindow* SubWindow : Public, Static
+    CEGUI.Window* Text : Public, Static
+    CEGUI.PushButton* Yes : Public, Static
+    CEGUI.PushButton* No : Public, Static
+    CEGUI.PushButton* OK : Public, Static
+    UInt32 ID : Public, Static
+    DialogMode Mode : Public, Static
+  Events:
+    System.EventHandler Cancelled: SpecialName
+    System.EventHandler Confirmed: SpecialName
+  Methods:
+    add_Confirmed(EventHandler): PrivateScope, Public, Static, HideBySig, SpecialName
+    remove_Confirmed(EventHandler): PrivateScope, Public, Static, HideBySig, SpecialName
+    add_Cancelled(EventHandler): PrivateScope, Public, Static, HideBySig, SpecialName
+    remove_Cancelled(EventHandler): PrivateScope, Public, Static, HideBySig, SpecialName
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    ShowChoice(String* IsImplicitlyDereferenced, UInt32): PrivateScope, Public, Static, HideBySig
+    ShowOK(String* IsImplicitlyDereferenced, UInt32): PrivateScope, Public, Static, HideBySig
+    _RaiseConfirm(): PrivateScope, Public, Static, HideBySig
+    _RaiseCancel(): PrivateScope, Public, Static, HideBySig
+Struct Meridian59.Ogre.ControllerUI+ConfirmPopup+DialogMode: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    DialogMode Confirm = 0 : Public, Static, Literal, HasDefault
+    DialogMode YesNo = 1 : Public, Static, Literal, HasDefault
+Class Meridian59.Ogre.ControllerUI+PlayerOverlays: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    IsOverlayWindow(Window*): PrivateScope, Public, Static, HideBySig
+    OnPlayerOverlaysListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    PlayerOverlayAdd(Int32): PrivateScope, Public, Static, HideBySig
+    PlayerOverlayRemove(Int32): PrivateScope, Public, Static, HideBySig
+    PlayerOverlayChange(Int32): PrivateScope, Public, Static, HideBySig
+    OnImageAvailable(Object, EventArgs): PrivateScope, Public, Static, HideBySig
+    HideOverlays(): PrivateScope, Public, Static, HideBySig
+    ShowOverlays(): PrivateScope, Public, Static, HideBySig
+    WindowResized(Int32, Int32): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+ObjectContents: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.FrameWindow* Window : Public, Static
+    CEGUI.ItemListbox* List : Public, Static
+    CEGUI.PushButton* Get : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    OnObjectContentsPropertyChanged(Object, PropertyChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnObjectContentsListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnNewItemImageAvailable(Object, EventArgs): PrivateScope, Public, Static, HideBySig
+    ItemAdd(Int32): PrivateScope, Public, Static, HideBySig
+    ItemRemove(Int32): PrivateScope, Public, Static, HideBySig
+    ItemChange(Int32): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+LootList: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.FrameWindow* Window : Public, Static
+    CEGUI.ItemListbox* List : Public, Static
+    CEGUI.PushButton* Get : Public, Static
+    CEGUI.PushButton* GetAll : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    OnLootInfoPropertyChanged(Object, PropertyChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnLootInfoListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnNewItemImageAvailable(Object, EventArgs): PrivateScope, Public, Static, HideBySig
+    ItemAdd(Int32): PrivateScope, Public, Static, HideBySig
+    ItemRemove(Int32): PrivateScope, Public, Static, HideBySig
+    ItemChange(Int32): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+GoList: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.FrameWindow* Window : Public, Static
+    CEGUI.ItemListbox* List : Public, Static
+    CEGUI.PushButton* GoNow : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    LoadList(): PrivateScope, Public, Static, HideBySig
+    ItemAdd(Int32, basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, basic_string<char\,std::char_traits<char>\,std::allocator<char> >*): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+Login: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.Window* Window : Public, Static
+    CEGUI.Combobox* Server : Public, Static
+    CEGUI.Editbox* Username : Public, Static
+    CEGUI.Window* UsernameDesc : Public, Static
+    CEGUI.Editbox* Password : Public, Static
+    CEGUI.Window* PasswordDesc : Public, Static
+    CEGUI.PushButton* Connect : Public, Static
+    CEGUI.PushButton* Options : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+Options: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.FrameWindow* Window : Public, Static
+    CEGUI.PushButton* Engine : Public, Static
+    CEGUI.PushButton* Input : Public, Static
+    CEGUI.PushButton* GamePlay : Public, Static
+    CEGUI.PushButton* Aliases : Public, Static
+    CEGUI.PushButton* Groups : Public, Static
+    CEGUI.PushButton* About : Public, Static
+    CEGUI.TabControl* TabControl : Public, Static
+    CEGUI.Window* TabEngine : Public, Static
+    CEGUI.Window* TabInput : Public, Static
+    CEGUI.Window* TabGamePlay : Public, Static
+    CEGUI.Window* TabAliases : Public, Static
+    CEGUI.Window* TabGroups : Public, Static
+    CEGUI.Window* TabAbout : Public, Static
+    CEGUI.TabControl* TabInputTabControl : Public, Static
+    CEGUI.Window* TabInputTabGeneral : Public, Static
+    CEGUI.Window* TabInputTabActionButtons1 : Public, Static
+    CEGUI.Window* TabInputTabActionButtons2 : Public, Static
+    CEGUI.Combobox* Display : Public, Static
+    CEGUI.Combobox* Resolution : Public, Static
+    CEGUI.ToggleButton* WindowMode : Public, Static
+    CEGUI.ToggleButton* WindowBorders : Public, Static
+    CEGUI.ToggleButton* VSync : Public, Static
+    CEGUI.Combobox* FSAA : Public, Static
+    CEGUI.Combobox* Filtering : Public, Static
+    CEGUI.Combobox* ImageBuilder : Public, Static
+    CEGUI.Combobox* ScalingQuality : Public, Static
+    CEGUI.Combobox* TextureQuality : Public, Static
+    CEGUI.ToggleButton* DisableMipmaps : Public, Static
+    CEGUI.ToggleButton* DisableNewRoomTextures : Public, Static
+    CEGUI.ToggleButton* Disable3DModels : Public, Static
+    CEGUI.ToggleButton* DisableNewSky : Public, Static
+    CEGUI.ToggleButton* DisableWeather : Public, Static
+    CEGUI.Slider* Particles : Public, Static
+    CEGUI.Slider* Decoration : Public, Static
+    CEGUI.Slider* MusicVolume : Public, Static
+    CEGUI.Slider* SoundVolume : Public, Static
+    CEGUI.ToggleButton* DisableLoopSounds : Public, Static
+    CEGUI.ToggleButton* PreloadRooms : Public, Static
+    CEGUI.ToggleButton* PreloadRoomTextures : Public, Static
+    CEGUI.ToggleButton* PreloadObjects : Public, Static
+    CEGUI.ToggleButton* PreloadSounds : Public, Static
+    CEGUI.ToggleButton* PreloadMusic : Public, Static
+    CEGUI.Combobox* Language : Public, Static
+    CEGUI.ToggleButton* Safety : Public, Static
+    CEGUI.ToggleButton* Grouping : Public, Static
+    CEGUI.ToggleButton* SpellPower : Public, Static
+    CEGUI.ToggleButton* ReagentBag : Public, Static
+    CEGUI.ToggleButton* TempSafe : Public, Static
+    CEGUI.ToggleButton* AutoLoot : Public, Static
+    CEGUI.ToggleButton* AutoCombine : Public, Static
+    CEGUI.PushButton* LearnMoveForward : Public, Static
+    CEGUI.PushButton* LearnMoveBackward : Public, Static
+    CEGUI.PushButton* LearnMoveLeft : Public, Static
+    CEGUI.PushButton* LearnMoveRight : Public, Static
+    CEGUI.PushButton* LearnRotateLeft : Public, Static
+    CEGUI.PushButton* LearnRotateRight : Public, Static
+    CEGUI.PushButton* LearnWalk : Public, Static
+    CEGUI.PushButton* LearnAutoMove : Public, Static
+    CEGUI.PushButton* LearnNextTarget : Public, Static
+    CEGUI.PushButton* LearnSelfTarget : Public, Static
+    CEGUI.PushButton* LearnOpen : Public, Static
+    CEGUI.PushButton* LearnClose : Public, Static
+    CEGUI.Slider* MouseAimSpeed : Public, Static
+    CEGUI.Slider* MouseAimDistance : Public, Static
+    CEGUI.Slider* CameraDistanceMax : Public, Static
+    CEGUI.Slider* CameraPitchMax : Public, Static
+    CEGUI.ToggleButton* InvertMouseY : Public, Static
+    CEGUI.ToggleButton* CameraCollisions : Public, Static
+    CEGUI.Slider* KeyRotateSpeed : Public, Static
+    CEGUI.Combobox* RightClickAction : Public, Static
+    CEGUI.PushButton* LearnAction01 : Public, Static
+    CEGUI.PushButton* LearnAction02 : Public, Static
+    CEGUI.PushButton* LearnAction03 : Public, Static
+    CEGUI.PushButton* LearnAction04 : Public, Static
+    CEGUI.PushButton* LearnAction05 : Public, Static
+    CEGUI.PushButton* LearnAction06 : Public, Static
+    CEGUI.PushButton* LearnAction07 : Public, Static
+    CEGUI.PushButton* LearnAction08 : Public, Static
+    CEGUI.PushButton* LearnAction09 : Public, Static
+    CEGUI.PushButton* LearnAction10 : Public, Static
+    CEGUI.PushButton* LearnAction11 : Public, Static
+    CEGUI.PushButton* LearnAction12 : Public, Static
+    CEGUI.PushButton* LearnAction13 : Public, Static
+    CEGUI.PushButton* LearnAction14 : Public, Static
+    CEGUI.PushButton* LearnAction15 : Public, Static
+    CEGUI.PushButton* LearnAction16 : Public, Static
+    CEGUI.PushButton* LearnAction17 : Public, Static
+    CEGUI.PushButton* LearnAction18 : Public, Static
+    CEGUI.PushButton* LearnAction19 : Public, Static
+    CEGUI.PushButton* LearnAction20 : Public, Static
+    CEGUI.PushButton* LearnAction21 : Public, Static
+    CEGUI.PushButton* LearnAction22 : Public, Static
+    CEGUI.PushButton* LearnAction23 : Public, Static
+    CEGUI.PushButton* LearnAction24 : Public, Static
+    CEGUI.PushButton* LearnAction25 : Public, Static
+    CEGUI.PushButton* LearnAction26 : Public, Static
+    CEGUI.PushButton* LearnAction27 : Public, Static
+    CEGUI.PushButton* LearnAction28 : Public, Static
+    CEGUI.PushButton* LearnAction29 : Public, Static
+    CEGUI.PushButton* LearnAction30 : Public, Static
+    CEGUI.PushButton* LearnAction31 : Public, Static
+    CEGUI.PushButton* LearnAction32 : Public, Static
+    CEGUI.PushButton* LearnAction33 : Public, Static
+    CEGUI.PushButton* LearnAction34 : Public, Static
+    CEGUI.PushButton* LearnAction35 : Public, Static
+    CEGUI.PushButton* LearnAction36 : Public, Static
+    CEGUI.PushButton* LearnAction37 : Public, Static
+    CEGUI.PushButton* LearnAction38 : Public, Static
+    CEGUI.PushButton* LearnAction39 : Public, Static
+    CEGUI.PushButton* LearnAction40 : Public, Static
+    CEGUI.PushButton* LearnAction41 : Public, Static
+    CEGUI.PushButton* LearnAction42 : Public, Static
+    CEGUI.PushButton* LearnAction43 : Public, Static
+    CEGUI.PushButton* LearnAction44 : Public, Static
+    CEGUI.PushButton* LearnAction45 : Public, Static
+    CEGUI.PushButton* LearnAction46 : Public, Static
+    CEGUI.PushButton* LearnAction47 : Public, Static
+    CEGUI.PushButton* LearnAction48 : Public, Static
+    CEGUI.ItemListbox* ListAliases : Public, Static
+    CEGUI.Editbox* AliasKey : Public, Static
+    CEGUI.Editbox* AliasValue : Public, Static
+    CEGUI.PushButton* AliasAddBtn : Public, Static
+    CEGUI.Window* DisabledDescription : Public, Static
+    CEGUI.Editbox* GroupName : Public, Static
+    CEGUI.Editbox* MemberName : Public, Static
+    CEGUI.PushButton* AddGroup : Public, Static
+    CEGUI.PushButton* AddMember : Public, Static
+    CEGUI.Window* NewGroup : Public, Static
+    CEGUI.Window* NewMember : Public, Static
+    CEGUI.Window* GroupsDescription : Public, Static
+    CEGUI.Window* MembersDescription : Public, Static
+    CEGUI.ItemListbox* ListGroups : Public, Static
+    CEGUI.ItemListbox* ListMembers : Public, Static
+    CEGUI.TabControl* TabAboutTabControl : Public, Static
+    CEGUI.Window* TabAboutTabGeneral : Public, Static
+    CEGUI.Window* TabAboutTabGeneralVersion : Public, Static
+    CEGUI.Window* TabAboutTabHistory : Public, Static
+    CEGUI.TabControl* TabAboutTabHistoryTabControl : Public, Static
+    CEGUI.Window* TabAboutTabHistoryTabEvolution : Public, Static
+    CEGUI.Window* TabAboutTabHistoryTabResurrection : Public, Static
+    CEGUI.Window* TabAboutTabHistoryTabDarkAuspices : Public, Static
+    CEGUI.Window* TabAboutTabHistoryTabInsurrection : Public, Static
+    CEGUI.Window* TabAboutTabHistoryTabRenaissance : Public, Static
+    CEGUI.Window* TabAboutTabHistoryTabRevelation : Public, Static
+    CEGUI.Window* TabAboutTabHistoryTabValeOfSorrow : Public, Static
+    CEGUI.Window* TabAboutTabHistoryTabTheInternetQuestBegins : Public, Static
+    CEGUI.Window* TabAboutTabHistoryImageEvolution : Public, Static
+    CEGUI.Window* TabAboutTabHistoryImageResurrection : Public, Static
+    CEGUI.Window* TabAboutTabHistoryImageDarkAuspices : Public, Static
+    CEGUI.Window* TabAboutTabHistoryImageInsurrection : Public, Static
+    CEGUI.Window* TabAboutTabHistoryImageRenaissance : Public, Static
+    CEGUI.Window* TabAboutTabHistoryImageRevelation : Public, Static
+    CEGUI.Window* TabAboutTabHistoryImageValeOfSorrow : Public, Static
+    CEGUI.Window* TabAboutTabHistoryImageTheInternetQuestBegins : Public, Static
+    Meridian59.Data.Models.Group CurrentGroup : Public, Static
+  Methods:
+    AliasAdd(Int32): PrivateScope, Public, Static, HideBySig
+    AliasRemove(Int32): PrivateScope, Public, Static, HideBySig
+    GroupAdd(Int32): PrivateScope, Public, Static, HideBySig
+    GroupRemove(Int32): PrivateScope, Public, Static, HideBySig
+    MemberAdd(Int32): PrivateScope, Public, Static, HideBySig
+    MemberRemove(Int32): PrivateScope, Public, Static, HideBySig
+    OnConfigPropertyChanged(Object, PropertyChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnDataPropertyChanged(Object, PropertyChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnClientPreferencesPropertyChanged(Object, PropertyChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnAliasListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnGroupsListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    OnMembersListChanged(Object, ListChangedEventArgs): PrivateScope, Public, Static, HideBySig
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+Stats: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.Window* Window : Public, Static
+    CEGUI.Window* RenderWindowBatches : Public, Static
+    CEGUI.Window* RenderWindowTriangles : Public, Static
+    CEGUI.Window* RenderSystemBatches : Public, Static
+    CEGUI.Window* RenderSystemFaces : Public, Static
+    CEGUI.Window* RenderSystemVertices : Public, Static
+    CEGUI.Window* MainThreadBest : Public, Static
+    CEGUI.Window* MainThreadAverage : Public, Static
+    CEGUI.Window* MainThreadWorst : Public, Static
+    CEGUI.Window* MiniMapThreadBest : Public, Static
+    CEGUI.Window* MiniMapThreadAverage : Public, Static
+    CEGUI.Window* MiniMapThreadWorst : Public, Static
+    CEGUI.Window* OgreMemTextures : Public, Static
+    CEGUI.Window* OgreMemMaterials : Public, Static
+    CEGUI.Window* OgreMemMeshes : Public, Static
+    CEGUI.Window* OgreMemCompositors : Public, Static
+    CEGUI.Window* CEGUIObjectCacheRoom : Public, Static
+    CEGUI.Window* CEGUIObjectCacheObject : Public, Static
+    CEGUI.Window* CEGUIObjectCacheInventory : Public, Static
+    CEGUI.Window* OgreRoomObjectCache : Public, Static
+    CEGUI.Window* OgreFrustumLights : Public, Static
+    CEGUI.Window* OgreRoomSections : Public, Static
+    CEGUI.Window* GarbageCollectionRuns : Public, Static
+    CEGUI.Window* LegacyResourcesObjects : Public, Static
+    CEGUI.Window* LegacyResourcesTextures : Public, Static
+    CEGUI.Window* LegacyResourcesRooms : Public, Static
+    CEGUI.Window* LegacyResourcesSounds : Public, Static
+    CEGUI.Window* LegacyResourcesMusic : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+    Tick(): PrivateScope, Public, Static, HideBySig
+Struct Meridian59.Ogre.UICallbacks: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+Welcome: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+StatusBar: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+OnlinePlayers: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+RoomObjects: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+Chat: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+Avatar: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+ObjectDetails: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+SpellDetails: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+SkillDetails: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+PlayerDetails: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+Target: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+MiniMap: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+RoomEnchantments: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+Buy: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+Attributes: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+Skills: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+Spells: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+Quests: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+Actions: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+Inventory: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+MainButtonsLeft: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+MainButtonsRight: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+Amount: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+Trade: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+ActionButtons: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+NewsGroup: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+NewsGroupCompose: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+Mail: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+MailCompose: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+Guild: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+GuildCreate: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+GuildHallBuy: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+AvatarCreateWizard: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+StatChangeWizard: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+ConfirmPopup: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+ObjectContents: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+LootList: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+GoList: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+Login: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+Options: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Class Meridian59.Ogre.ProjectileNode2D: AutoLayout, AnsiClass, Class, Public
+    Void .ctor(Meridian59.Data.Models.Projectile, Ogre.SceneManager*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Properties:
+    Ogre.Light* Light 'get set' : 
+    Ogre.SceneNode* SceneNode 'get set' : 
+    Meridian59.Data.Models.Projectile Projectile 'get set' : 
+  Methods:
+    get_Projectile(): PrivateScope, Public, HideBySig, SpecialName
+    get_SceneNode(): PrivateScope, Public, HideBySig, SpecialName
+    get_Light(): PrivateScope, Public, HideBySig, SpecialName
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class Meridian59.Ogre.MiniMapCEGUI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean IsRunning : Public, Static
+    Double TickWorst : Public, Static
+    Double TickBest : Public, Static
+    Double TickAvg : Public, Static
+    UInt32 COLOR_MAP_WALL = 4278190080 : Public, Static, Literal, HasDefault
+    UInt32 COLOR_MAP_PLAYER = 4278190335 : Public, Static, Literal, HasDefault
+    UInt32 COLOR_MAP_PLAYER_FRONT = 4278190080 : Public, Static, Literal, HasDefault
+    UInt32 COLOR_MAP_OBJECT = 4294901760 : Public, Static, Literal, HasDefault
+    UInt32 COLOR_MAP_FRIEND = 4278255480 : Public, Static, Literal, HasDefault
+    UInt32 COLOR_MAP_ENEMY = 4294901760 : Public, Static, Literal, HasDefault
+    UInt32 COLOR_MAP_GUILDMATE = 4294967040 : Public, Static, Literal, HasDefault
+    UInt32 COLOR_MAP_MINION = 4278241280 : Public, Static, Literal, HasDefault
+    UInt32 COLOR_MAP_MINION_OTH = 4282779010 : Public, Static, Literal, HasDefault
+    UInt32 COLOR_MAP_BUILDGRP = 4278255360 : Public, Static, Literal, HasDefault
+    UInt32 COLOR_MAP_NPC = 4278190080 : Public, Static, Literal, HasDefault
+    UInt32 COLOR_MAP_TEMPSAFE = 4278233855 : Public, Static, Literal, HasDefault
+    UInt32 COLOR_MAP_MINIBOSS = 4288692930 : Public, Static, Literal, HasDefault
+    UInt32 COLOR_MAP_BOSS = 4286513152 : Public, Static, Literal, HasDefault
+    UInt32 COLOR_MAP_RARE_ITEM = 4293787401 : Public, Static, Literal, HasDefault
+    UInt32 COLOR_MAP_NO_PVP = 4294967295 : Public, Static, Literal, HasDefault
+    UInt32 COLOR_MAP_AGGRO_SELF = 4278190080 : Public, Static, Literal, HasDefault
+    UInt32 COLOR_MAP_AGGRO_OTHER = 4294967295 : Public, Static, Literal, HasDefault
+    UInt32 COLOR_MAP_MERCENARY = 4294945051 : Public, Static, Literal, HasDefault
+    Int32 MAXWALLS = 2048 : Public, Static, Literal, HasDefault
+    Int32 MAXOBJECTS = 256 : Public, Static, Literal, HasDefault
+    Single DEFAULTZOOM = 4 : Public, Static, Literal, HasDefault
+    Int32 DEFAULTWIDTH = 256 : Public, Static, Literal, HasDefault
+    Int32 DEFAULTHEIGHT = 256 : Public, Static, Literal, HasDefault
+    Int32 MAXTOKENS = 4 : Public, Static, Literal, HasDefault
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Tick(Window*, Window*, Single, IEnumerable`1): PrivateScope, Public, Static, HideBySig
+    SetMapData(IEnumerable`1): PrivateScope, Public, Static, HideBySig
+Struct Meridian59.Ogre.MiniMapCEGUI+MapWall: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Meridian59.Common.V2 S : Public
+    Meridian59.Common.V2 E : Public
+  Methods:
+    UpdateFromModel(RooWall): PrivateScope, Public, HideBySig
+Struct Meridian59.Ogre.MiniMapCEGUI+MapObject: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Meridian59.Common.V2 P : Public
+    Meridian59.Data.Models.ObjectFlags Flags : Public
+  Methods:
+    UpdateFromModel(RoomObject): PrivateScope, Public, HideBySig
+Class Meridian59.Ogre.MiniMapCEGUI+Token: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(Int32, Int32, Single, System.Collections.Generic.IEnumerable`1[Meridian59.Data.Models.RoomObject]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    System.Drawing.Graphics gdi : Public
+    System.Drawing.Bitmap bitmap : Public
+    Void* mem : Public
+    Single width : Public
+    Single height : Public
+    Single zoom : Public
+    MapObject[] mapObjects : Public
+    Int32 countObjects : Public
+    MapObject avatarObject : Public
+    Single avatarAngle : Public
+  Methods:
+    Update(Int32, Int32, Single, IEnumerable`1): PrivateScope, Public, HideBySig
+    ClearPixels(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class Meridian59.Ogre.ImageBuilder: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Initialize(ImageBuilderType): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    PrepareDraw(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced, Int32, Int32, Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig
+    FinishDraw(): PrivateScope, Public, Static, HideBySig
+    DrawBackground(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    DrawBGF(BgfBitmap, Int32, Int32, Int32, Int32, SByte IsSignUnspecifiedByte): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ImageBuilder+GDI: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    System.Drawing.Drawing2D.InterpolationMode InterpolationMode : Public, Static
+    System.Drawing.Drawing2D.PixelOffsetMode PixelOffsetMode : Public, Static
+    System.Drawing.Drawing2D.SmoothingMode SmoothingMode : Public, Static
+    System.Drawing.Drawing2D.CompositingQuality CompositingQuality : Public, Static
+    Boolean IsInitialized : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    PrepareDraw(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced, Int32, Int32, Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig
+    FinishDraw(): PrivateScope, Public, Static, HideBySig
+    DrawBackground(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    DrawBGF(BgfBitmap, Rectangle, Byte): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ImageBuilder+DirectDraw: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Boolean IsInitialized : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    PrepareDraw(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced, Int32, Int32, Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig
+    FinishDraw(): PrivateScope, Public, Static, HideBySig
+    DrawBackground(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    DrawBGF(BgfBitmap, tagRECT*, Byte): PrivateScope, Public, Static, HideBySig
+    GetError(Int32 IsLong): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ImageBuilder+DirectX: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Boolean IsInitialized : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    PrepareDraw(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced, Int32, Int32, Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig
+    FinishDraw(): PrivateScope, Public, Static, HideBySig
+    DrawBackground(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    DrawBGF(BgfBitmap, tagRECT*, Byte): PrivateScope, Public, Static, HideBySig
+    GetError(Int32 IsLong): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ImageBuilder+Native: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Boolean IsInitialized : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    PrepareDraw(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced, Int32, Int32, Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig
+    FinishDraw(): PrivateScope, Public, Static, HideBySig
+    DrawBackground(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    DrawBGF(BgfBitmap, UInt32, UInt32, UInt32, UInt32, Byte): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.GameTickOgre: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Meridian59.Common.GameTick
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Double INTERVALCHATUPDATE : Public
+    Double INTERVALKEYREPEAT : Public
+    Double INTERVALKEYREPEATSTART : Public
+    Double INTERVALINVENTORYCLICK : Public
+    Double INTERVALMANUALFRAMERENDERED : Public
+  Properties:
+    Double SpanManualFrameRendered 'get ' : 
+    Double SpanInventoryClick 'get ' : 
+    Double SpanKeyRepeat 'get ' : 
+    Double SpanChatUpdate 'get ' : 
+    Double ManualFrameRendered 'get set' : 
+    Double InventoryClick 'get set' : 
+    Double KeyRepeat 'get set' : 
+    Double ChatUpdate 'get set' : 
+  Methods:
+    get_ChatUpdate(): PrivateScope, Public, HideBySig, SpecialName
+    get_KeyRepeat(): PrivateScope, Public, HideBySig, SpecialName
+    get_InventoryClick(): PrivateScope, Public, HideBySig, SpecialName
+    get_ManualFrameRendered(): PrivateScope, Public, HideBySig, SpecialName
+    get_SpanChatUpdate(): PrivateScope, Public, HideBySig, SpecialName
+    get_SpanKeyRepeat(): PrivateScope, Public, HideBySig, SpecialName
+    get_SpanInventoryClick(): PrivateScope, Public, HideBySig, SpecialName
+    get_SpanManualFrameRendered(): PrivateScope, Public, HideBySig, SpecialName
+    CanChatUpdate(): PrivateScope, Public, HideBySig
+    CanKeyRepeat(): PrivateScope, Public, HideBySig
+    CanKeyRepeatStart(): PrivateScope, Public, HideBySig
+    CanInventoryClick(): PrivateScope, Public, HideBySig
+    CanManualFrameRendered(): PrivateScope, Public, HideBySig
+    DidChatUpdate(): PrivateScope, Public, HideBySig
+    DidKeyRepeat(): PrivateScope, Public, HideBySig
+    DidInventoryClick(): PrivateScope, Public, HideBySig
+    DidManualFrameRendered(): PrivateScope, Public, HideBySig
+Class Meridian59.Ogre.ResourceManagerOgre: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Meridian59.Files.ResourceManager
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Meridian59.Ogre.DataControllerOgre: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Meridian59.Data.DataController
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Meridian59.Ogre.OgreClientConfig: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Meridian59.Common.Config
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 Display : Public
+    System.String Resolution : Public
+    Boolean WindowMode : Public
+    Boolean WindowFrame : Public
+    Boolean VSync : Public
+    System.String FSAA : Public
+    Boolean NoMipmaps : Public
+    System.String TextureFiltering : Public
+    System.String ImageBuilder : Public
+    System.String BitmapScaling : Public
+    System.String TextureQuality : Public
+    Int32 DecorationIntensity : Public
+    Boolean DisableNewRoomTextures : Public
+    Boolean Disable3DModels : Public
+    Boolean DisableNewSky : Public
+    Boolean DisableWeatherEffects : Public
+    Int32 WeatherParticles : Public
+    Single MusicVolume : Public
+    Single SoundVolume : Public
+    Boolean DisableLoopSounds : Public
+    Meridian59.Ogre.OISKeyBinding KeyBinding : Public
+    Int32 MouseAimSpeed : Public
+    Int32 MouseAimDistance : Public
+    Int32 KeyRotateSpeed : Public
+    Boolean InvertMouseY : Public
+    Boolean CameraCollisions : Public
+    Single CameraDistanceMax : Public
+    Single CameraPitchMax : Public
+    Boolean UILocked : Public
+    Boolean UIVisibilityAvatar : Public
+    Boolean UIVisibilityTarget : Public
+    Boolean UIVisibilityMiniMap : Public
+    Boolean UIVisibilityRoomEnchantments : Public
+    Boolean UIVisibilityChat : Public
+    Boolean UIVisibilityInventory : Public
+    Boolean UIVisibilitySpells : Public
+    Boolean UIVisibilitySkills : Public
+    Boolean UIVisibilityActions : Public
+    Boolean UIVisibilityAttributes : Public
+    Boolean UIVisibilityMainButtonsLeft : Public
+    Boolean UIVisibilityMainButtonsRight : Public
+    Boolean UIVisibilityActionButtons : Public
+    Boolean UIVisibilityOnlinePlayers : Public
+    Boolean UIVisibilityRoomObjects : Public
+    CEGUI.Rect<CEGUI::UDim>* UILayoutAvatar : Public
+    CEGUI.Rect<CEGUI::UDim>* UILayoutTarget : Public
+    CEGUI.Rect<CEGUI::UDim>* UILayoutMinimap : Public
+    CEGUI.Rect<CEGUI::UDim>* UILayoutRoomEnchantments : Public
+    CEGUI.Rect<CEGUI::UDim>* UILayoutChat : Public
+    CEGUI.Rect<CEGUI::UDim>* UILayoutInventory : Public
+    CEGUI.Rect<CEGUI::UDim>* UILayoutSpells : Public
+    CEGUI.Rect<CEGUI::UDim>* UILayoutSkills : Public
+    CEGUI.Rect<CEGUI::UDim>* UILayoutActions : Public
+    CEGUI.Rect<CEGUI::UDim>* UILayoutAttributes : Public
+    CEGUI.Rect<CEGUI::UDim>* UILayoutMainButtonsLeft : Public
+    CEGUI.Rect<CEGUI::UDim>* UILayoutMainButtonsRight : Public
+    CEGUI.Rect<CEGUI::UDim>* UILayoutActionButtons : Public
+    CEGUI.Rect<CEGUI::UDim>* UILayoutOnlinePlayers : Public
+    CEGUI.Rect<CEGUI::UDim>* UILayoutRoomObjects : Public
+    System.Collections.Generic.List`1[Meridian59.Data.Lists.ActionButtonList] ActionButtonSets : Public
+    Int32 DEFAULTVAL_ENGINE_DISPLAY = 0 : Public, Static, Literal, HasDefault
+    System.String DEFAULTVAL_ENGINE_RESOLUTION = 1280 x 720 @ 32-bit colour : Public, Static, Literal, HasDefault
+    Boolean DEFAULTVAL_ENGINE_WINDOWMODE = True : Public, Static, Literal, HasDefault
+    Boolean DEFAULTVAL_ENGINE_WINDOWFRAME = True : Public, Static, Literal, HasDefault
+    Boolean DEFAULTVAL_ENGINE_VSYNC = True : Public, Static, Literal, HasDefault
+    System.String DEFAULTVAL_ENGINE_FSAA = 8 : Public, Static, Literal, HasDefault
+    Boolean DEFAULTVAL_ENGINE_NOMIPMAPS = False : Public, Static, Literal, HasDefault
+    System.String DEFAULTVAL_ENGINE_TEXFILTERING = Anisotropic x16 : Public, Static, Literal, HasDefault
+    System.String DEFAULTVAL_ENGINE_IMAGEBUILDER = GDI : Public, Static, Literal, HasDefault
+    System.String DEFAULTVAL_ENGINE_BITMAPSCALING = Default : Public, Static, Literal, HasDefault
+    System.String DEFAULTVAL_ENGINE_TEXQUALITY = Default : Public, Static, Literal, HasDefault
+    Int32 DEFAULTVAL_ENGINE_DECORATIONINTENSITY = 20 : Public, Static, Literal, HasDefault
+    Boolean DEFAULTVAL_ENGINE_DISABLENEWROOMTEX = False : Public, Static, Literal, HasDefault
+    Boolean DEFAULTVAL_ENGINE_DISABLE3DMODELS = False : Public, Static, Literal, HasDefault
+    Boolean DEFAULTVAL_ENGINE_DISABLENEWSKY = False : Public, Static, Literal, HasDefault
+    Boolean DEFAULTVAL_ENGINE_DISABLEWEATHEREFFECTS = False : Public, Static, Literal, HasDefault
+    Int32 DEFAULTVAL_ENGINE_WEATHERPARTICLES = 5000 : Public, Static, Literal, HasDefault
+    Int32 DEFAULTVAL_ENGINE_MUSICVOLUME = 4 : Public, Static, Literal, HasDefault
+    Int32 DEFAULTVAL_ENGINE_SOUNDVOLUME = 10 : Public, Static, Literal, HasDefault
+    Boolean DEFAULTVAL_ENGINE_DISABLELOOPSOUNDS = False : Public, Static, Literal, HasDefault
+    Int32 DEFAULTVAL_INPUT_MOUSEAIMSPEED = 45 : Public, Static, Literal, HasDefault
+    Int32 DEFAULTVAL_INPUT_MOUSEAIMDISTANCE = 45 : Public, Static, Literal, HasDefault
+    Int32 DEFAULTVAL_INPUT_KEYROTATESPEED = 25 : Public, Static, Literal, HasDefault
+    Boolean DEFAULTVAL_INPUT_INVERTMOUSEY = False : Public, Static, Literal, HasDefault
+    Boolean DEFAULTVAL_INPUT_CAMERACOLLISIONS = True : Public, Static, Literal, HasDefault
+    Single DEFAULTVAL_INPUT_CAMERADISTANCEMAX = 1024 : Public, Static, Literal, HasDefault
+    Single DEFAULTVAL_INPUT_CAMERAPITCHMAX = 0.25 : Public, Static, Literal, HasDefault
+    Boolean DEFAULTVAL_UI_LOCKED = False : Public, Static, Literal, HasDefault
+    Boolean DEFAULTVAL_UI_VISIBILITYAVATAR = True : Public, Static, Literal, HasDefault
+    Boolean DEFAULTVAL_UI_VISIBILITYTARGET = False : Public, Static, Literal, HasDefault
+    Boolean DEFAULTVAL_UI_VISIBILITYMINIMAP = True : Public, Static, Literal, HasDefault
+    Boolean DEFAULTVAL_UI_VISIBILITYROOMENCHANTMENTS = True : Public, Static, Literal, HasDefault
+    Boolean DEFAULTVAL_UI_VISIBILITYCHAT = True : Public, Static, Literal, HasDefault
+    Boolean DEFAULTVAL_UI_VISIBILITYINVENTORY = True : Public, Static, Literal, HasDefault
+    Boolean DEFAULTVAL_UI_VISIBILITYSPELLS = False : Public, Static, Literal, HasDefault
+    Boolean DEFAULTVAL_UI_VISIBILITYSKILLS = False : Public, Static, Literal, HasDefault
+    Boolean DEFAULTVAL_UI_VISIBILITYACTIONS = False : Public, Static, Literal, HasDefault
+    Boolean DEFAULTVAL_UI_VISIBILITYATTRIBUTES = False : Public, Static, Literal, HasDefault
+    Boolean DEFAULTVAL_UI_VISIBILITYMAINBUTTONSLEFT = True : Public, Static, Literal, HasDefault
+    Boolean DEFAULTVAL_UI_VISIBILITYMAINBUTTONSRIGHT = True : Public, Static, Literal, HasDefault
+    Boolean DEFAULTVAL_UI_VISIBILITYACTIONBUTTONGRID = True : Public, Static, Literal, HasDefault
+    Boolean DEFAULTVAL_UI_VISIBILITYONLINEPLAYERS = False : Public, Static, Literal, HasDefault
+    Boolean DEFAULTVAL_UI_VISIBILITYROOMOBJECTS = False : Public, Static, Literal, HasDefault
+    System.String BUTTONTYPE_SPELL = spell : Public, Static, Literal, HasDefault
+    System.String BUTTONTYPE_ACTION = action : Public, Static, Literal, HasDefault
+    System.String BUTTONTYPE_ITEM = item : Public, Static, Literal, HasDefault
+    System.String BUTTONTYPE_UNSET = unset : Public, Static, Literal, HasDefault
+  Methods:
+    ReadXml(XmlDocument): PrivateScope, Public, Virtual, HideBySig
+    WriteXml(XmlWriter): PrivateScope, Public, Virtual, HideBySig
+    GetActionButtonSetByName(String): PrivateScope, Public, HideBySig
+    AddOrUpdateActionButtonSet(ActionButtonList): PrivateScope, Public, HideBySig
+Class Meridian59.Ogre.DroneBot: AutoLayout, AnsiClass, Class, Public
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean IsDM : Public
+    Int32 assist_id : Public
+    Single assist_distance : Public
+    System.String assist_name : Public
+    Meridian59.Data.Models.RoomObject AssistPlayer : Public
+    Boolean safe_logon : Public
+    Boolean safe_logged_on : Public
+    Boolean safe_phase_casted : Public
+    Int64 last_hit_timer : Public
+    Int64 bad_target_timer : Public
+    Int64 ignored_targets_timer : Public
+    Int64 seek_timer : Public
+    Int64 face_timer : Public
+    Int64 auto_convey : Public
+    Int64 last_eat : Public
+    Int64 last_loot : Public
+    Int32 ticks_face : Public
+    Int32 ticks_convey : Public
+    Int32 ticks_test : Public
+    Int32 ticks_tick : Public
+    Int32 auto_convey_every_interval_seconds : Public
+    Int32 HP : Public
+    Int32 MP : Public
+    Int32 VG : Public
+    Int32 HP_Max : Public
+    Int32 MP_Max : Public
+    Int32 VG_Max : Public
+    Single VG_Percent : Public
+    Single HP_Percent : Public
+    Single MP_Percent : Public
+    Int32 ticks_tour : Public
+    Int32 last_room_id : Public
+    Int32 last_tour_index : Public
+    Int32 next_tour_index : Public
+    System.String last_room_roo_name : Public
+    Boolean Running_SeekAndDestroy : Public
+    Boolean landed_hit : Public
+    Meridian59.Data.Models.RoomObject Avatar : Public
+    Meridian59.Common.Enums.AccountType account_type : Public
+    Int32 avatar_id : Public
+    Single last_x : Public
+    Single last_y : Public
+    Single last_z : Public
+    Meridian59.Data.Models.RoomObject Target : Public
+    Int32 target_id : Public
+    Int32 target_id_last : Public
+    Boolean target_changed : Public
+    Single target_last_x : Public
+    Single target_last_y : Public
+    Single target_last_z : Public
+    Double sleepUntil : Public
+    Double currentTick : Public
+    Int32 aggro_count : Public
+    Boolean aggro : Public
+    Int32 imps : Public
+    Int32 toughers : Public
+    Boolean allow_fast_attack : Public
+    Boolean conveying : Public
+    Boolean phasing : Public
+    Boolean auto_phasing : Public
+    Boolean auto_conveying : Public
+    Boolean room_changed : Public
+    Boolean game_saved : Public
+    Boolean first_tick : Public
+    Boolean try_on_next_tick : Public
+    Boolean follow : Public
+    Boolean assist : Public
+    Boolean seek_destroy : Public
+    Boolean dead : Public
+    Boolean engaged : Public
+    Boolean low : Public
+    Boolean tired : Public
+    Boolean stuck : Public
+    Boolean is_safe_logon : Public
+    Int32 cant_see_chat_tick : Public
+    Boolean cant_see_target : Public
+    System.String last_message : Public
+    System.String last_room_name : Public
+    CEGUI.Window* Window : Public, Static
+    CEGUI.Window* Text : Public, Static
+    CEGUI.Editbox* Input : Public, Static
+  Methods:
+    Init(): PrivateScope, Public, HideBySig
+    Tick(): PrivateScope, Public, HideBySig
+    Update(): PrivateScope, Public, HideBySig
+    UserInput(): PrivateScope, Public, HideBySig
+    UpdateChatStates(): PrivateScope, Public, HideBySig
+    Log(String, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    SetChatInput(String*): PrivateScope, Public, HideBySig
+    AppendChat(String): PrivateScope, Public, HideBySig
+    StopEverything(): PrivateScope, Public, HideBySig
+    AutoFollow(): PrivateScope, Public, HideBySig
+    Assist(): PrivateScope, Public, HideBySig
+    SeekAndDestroy(): PrivateScope, Public, HideBySig
+    LogPosition(): PrivateScope, Public, HideBySig
+    GetClosestTarget(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    UpdateAllowTicks(): PrivateScope, Public, HideBySig
+    FaceTarget(Int32): PrivateScope, Public, HideBySig
+    Convey(): PrivateScope, Public, HideBySig
+    Phase(): PrivateScope, Public, HideBySig
+    FastAttack(): PrivateScope, Public, HideBySig
+    PhaseNow(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    IsAssistValid(): PrivateScope, Public, HideBySig
+    CheckSkipTarget(): PrivateScope, Public, HideBySig
+    GetClosestAssistTarget(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    Tour(): PrivateScope, Public, HideBySig
+    CheckLandedHit(): PrivateScope, Public, HideBySig
+Class Meridian59.Ogre.Drone: AutoLayout, AnsiClass, Class, Public
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Meridian59.Ogre.DroneBot Bot : Public
+  Methods:
+    Init(): PrivateScope, Public, HideBySig
+    Update(): PrivateScope, Public, HideBySig
+    Stop(): PrivateScope, Public, HideBySig
+    ShowHelp(): PrivateScope, Public, HideBySig
+Class Meridian59.Ogre.OgreClient: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Meridian59.Client.SingletonClient`5[Meridian59.Ogre.GameTickOgre,Meridian59.Ogre.ResourceManagerOgre,Meridian59.Ogre.DataControllerOgre,Meridian59.Ogre.OgreClientConfig,Meridian59.Ogre.OgreClient]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean RecreateWindow : Public
+    Meridian59.Ogre.Drone Drone IsByValue : Public, InitOnly
+  Properties:
+    Boolean IsCameraListenerEnabled 'get set' : 
+    Boolean HasFocus 'get set' : 
+    HWND__* RenderWindowHandle 'get set' : 
+    Ogre.OctreeSceneManager* SceneManager 'get set' : 
+    Ogre.Viewport* ViewportInvis 'get set' : 
+    Ogre.Viewport* Viewport 'get set' : 
+    Ogre.SceneNode* CameraNode 'get set' : 
+    Ogre.OctreeCamera* Camera 'get set' : 
+    Ogre.D3D9RenderSystem* RenderSystem 'get set' : 
+    Ogre.D3D9RenderWindow* RenderWindowDummy 'get set' : 
+    Ogre.D3D9RenderWindow* RenderWindow 'get set' : 
+    Ogre.Root* Root 'get set' : 
+    Byte AppVersionMinor 'get ' : 
+    Byte AppVersionMajor 'get ' : 
+  Methods:
+    get_AppVersionMajor(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_AppVersionMinor(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Root(): PrivateScope, Public, HideBySig, SpecialName
+    get_RenderWindow(): PrivateScope, Public, HideBySig, SpecialName
+    get_RenderWindowDummy(): PrivateScope, Public, HideBySig, SpecialName
+    get_RenderSystem(): PrivateScope, Public, HideBySig, SpecialName
+    get_Camera(): PrivateScope, Public, HideBySig, SpecialName
+    get_CameraNode(): PrivateScope, Public, HideBySig, SpecialName
+    get_Viewport(): PrivateScope, Public, HideBySig, SpecialName
+    get_ViewportInvis(): PrivateScope, Public, HideBySig, SpecialName
+    get_SceneManager(): PrivateScope, Public, HideBySig, SpecialName
+    get_RenderWindowHandle(): PrivateScope, Public, HideBySig, SpecialName
+    get_HasFocus(): PrivateScope, Public, HideBySig, SpecialName
+    set_HasFocus(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_IsCameraListenerEnabled(): PrivateScope, Public, HideBySig, SpecialName
+    set_IsCameraListenerEnabled(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    Init(): PrivateScope, Public, Virtual, HideBySig
+    Update(): PrivateScope, Public, Virtual, HideBySig
+    Disconnect(): PrivateScope, Public, Virtual, HideBySig
+    RenderManually(): PrivateScope, Public, HideBySig
+    ShowAdminForm(): PrivateScope, Public, HideBySig
+    SendUseCharacterMessage(ObjectID, Boolean(HasFieldMarshal), String): PrivateScope, Public, Virtual, HideBySig
+    SendReqQuit(): PrivateScope, Public, Virtual, HideBySig
+Struct Meridian59.Ogre.ImageBuilderType: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName

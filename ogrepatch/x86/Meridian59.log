@@ -1,0 +1,16 @@
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
++                                      Meridian 59                                        +
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+11:30:14 AM  Client              Info    Initializing client
+11:30:14 AM  Client              Info    Process ID: 19788 MainThread: 1
+11:30:14 AM  Logger              Info    Starting logger.
+11:30:14 AM  Client              Info    Starting client
+11:30:19 AM  ControllerRoom      Info    Setting AmbientLight to 0
+11:30:19 AM  ControllerRoom      Info    Setting DirectionalLight to 0
+11:30:19 AM  ControllerRoom      Info    Setting AmbientLight to 40
+11:30:19 AM  ControllerRoom      Info    Setting DirectionalLight to 0
+11:30:19 AM  ControllerRoom      Info    Start loading room: necarea3.roo
+11:30:19 AM  ControllerRoom      Info    Textures: 251.2900390625 ms
+11:30:19 AM  ControllerRoom      Info    Geometry: 3.97216796875 ms
+11:30:19 AM  ControllerRoom      Info    Decoration: 0.0556640625 ms
+11:30:19 AM  Logger              Info    DroneBot: Loaded into Ogre3D Client successfully.
