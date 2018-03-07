@@ -2840,7 +2840,28 @@
             <Property name="Area" value="{{0.5,2},{1,-25},{1,0},{1,0}}" />
          </Window>
       </Window>
-      
+
+      <!-- GoList -->
+      <Window type="TaharezLook/FrameWindow" name="GoList" >
+         <Property name="Text" value="Teleport" />
+         <Property name="Area" value="{{0,0},{0,24},{1,0},{1,0}}" />
+         <Property name="MaxSize" value="{{1,0},{1,0}}" />
+         <Property name="Size" value="{{0,288},{0,192}}" />
+         <Property name="MinSize" value="{{0,192},{0,144}}" />
+         <Property name="Position" value="{{0.5,-144},{0.3,144}}" />
+         
+         <!-- List -->
+         <Window type="TaharezLook/ItemListbox" name="GoList.List" >
+            <Property name="Area" value="{{0,0},{0,0},{1,0},{1,-28}}" />
+         </Window>
+         
+         <!-- GoNow button -->
+         <Window type="TaharezLook/Button" name="GoList.GoNow" >
+            <Property name="Text" value="Go Now" />
+            <Property name="Area" value="{{0,0},{1,-25},{0.5,-2},{1,0}}" />
+         </Window>
+      </Window>
+
       <!-- LoginWindow -->
       <Window type="TaharezLook/FrameWindowOrnamental" name="Login" >
          <Property name="TitlebarEnabled" value="False" />
