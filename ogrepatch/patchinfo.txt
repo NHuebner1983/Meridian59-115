@@ -33522,39 +33522,7 @@
  {
   "Basepath": "\\resources\\strings\\",
   "Download": true,
-  "Filename": "rsc0000-105.rsb",
-  "Version": 3,
-  "Length": 1866955,
-  "MyHash": "95015908BA38171BE288A61292633C64"
- },
- {
-  "Basepath": "\\resources\\strings\\",
-  "Download": true,
-  "Filename": "rsc0000-106.rsb",
-  "Version": 3,
-  "Length": 1866955,
-  "MyHash": "95015908BA38171BE288A61292633C64"
- },
- {
-  "Basepath": "\\resources\\strings\\",
-  "Download": true,
-  "Filename": "rsc0000-112.rsb",
-  "Version": 3,
-  "Length": 1866993,
-  "MyHash": "74879EE6C4B4F1672C336547D7034C40"
- },
- {
-  "Basepath": "\\resources\\strings\\",
-  "Download": true,
-  "Filename": "rsc0000-200.rsb",
-  "Version": 3,
-  "Length": 1866993,
-  "MyHash": "74879EE6C4B4F1672C336547D7034C40"
- },
- {
-  "Basepath": "\\resources\\strings\\",
-  "Download": true,
-  "Filename": "rsc0000-git.rsb",
+  "Filename": "rsc0000-115.rsb",
   "Version": 3,
   "Length": 1863596,
   "MyHash": "55957BF13559EB176FE0F1445E5CEDB9"
