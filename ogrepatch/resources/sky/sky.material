@@ -1,0 +1,89 @@
+material Sky/Day
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_write off
+
+			texture_unit
+			{
+				cubic_texture skya.png combinedUVW
+				tex_address_mode clamp
+			}
+		}
+	}
+}
+
+material Sky/Evening
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_write off
+
+			texture_unit
+			{
+				cubic_texture skyb.png combinedUVW
+				tex_address_mode clamp
+			}
+		}
+	}
+}
+
+material Sky/Morning
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_write off
+
+			texture_unit
+			{
+				cubic_texture skyc.png combinedUVW
+				tex_address_mode clamp
+			}
+		}
+	}
+}
+
+material Sky/Night
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_write off
+
+			texture_unit
+			{
+				cubic_texture skyd.png combinedUVW
+				tex_address_mode clamp
+			}
+		}
+	}
+}
+
+material Sky/Frenzy
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_write off
+
+			texture_unit
+			{
+				cubic_texture redsky.png combinedUVW
+				tex_address_mode clamp
+			}
+		}
+	}
+}

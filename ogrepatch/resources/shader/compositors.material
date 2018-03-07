@@ -1,0 +1,164 @@
+vertex_program Compositor/Compositor_vs hlsl
+{
+   source compositors.hlsl
+   target vs_3_0
+   entry_point Compositor_vs
+   optimisation_level 3
+
+   default_params
+   {
+      param_named_auto cWorldViewProj worldviewproj_matrix
+   }
+}
+
+fragment_program Compositor/BlackAndWhite_ps hlsl
+{
+	source compositors.hlsl
+	entry_point BlackAndWhite_ps
+	target ps_3_0
+	optimisation_level 3
+}
+
+fragment_program Compositor/Blend_ps hlsl
+{
+	source compositors.hlsl
+	entry_point Blend_ps
+	target ps_3_0
+	optimisation_level 3
+	
+	default_params
+    {
+		param_named blendcolor float4 1.0 1.0 1.0 0.0
+    }
+}
+
+fragment_program Compositor/Blur_ps hlsl
+{
+	source compositors.hlsl
+	entry_point Blur_ps
+	target ps_3_0
+	optimisation_level 3
+}
+
+fragment_program Compositor/Invert_ps hlsl
+{
+	source compositors.hlsl
+	entry_point Invert_ps
+	target ps_3_0
+	optimisation_level 3
+}
+
+material Compositor/BlackAndWhite
+{
+	technique
+	{
+		pass
+		{
+			cull_hardware none
+			cull_software none
+			depth_check off
+			lighting off
+			
+			vertex_program_ref Compositor/Compositor_vs
+			{
+			}
+			
+			fragment_program_ref Compositor/BlackAndWhite_ps
+			{
+			}
+
+			texture_unit
+			{
+			}
+		}
+	}
+}
+
+material Compositor/Blend
+{
+	technique
+	{
+		pass
+		{
+			cull_hardware none
+			cull_software none
+			depth_check off
+			lighting off
+			
+			vertex_program_ref Compositor/Compositor_vs
+			{
+			}
+			
+			fragment_program_ref Compositor/Blend_ps
+			{
+				param_named blendcolor float4 1.0 1.0 1.0 0.0
+			}
+
+			texture_unit
+			{
+			}
+		}
+	}
+}
+
+material Compositor/Black : Compositor/Blend { }
+material Compositor/Pain : Compositor/Blend { }
+material Compositor/Whiteout : Compositor/Blend { }
+material Compositor/XLatOverride : Compositor/Blend { }
+
+material Compositor/Blur
+{
+	technique
+	{
+		pass
+		{
+			cull_hardware none
+			cull_software none
+			depth_check off
+			lighting off
+			
+			vertex_program_ref Compositor/Compositor_vs
+			{
+			}
+			
+			fragment_program_ref Compositor/Blur_ps
+			{
+	            param_named sampleDist float 1.0
+	            param_named sampleStrength float 2.2
+			}
+			
+			texture_unit
+			{
+                tex_coord_set 0
+				tex_address_mode clamp
+				filtering trilinear
+			}
+		}
+	}
+}
+
+material Compositor/Invert
+{
+	technique
+	{
+		pass
+		{
+			cull_hardware none
+			cull_software none
+			depth_check off
+			lighting off
+			
+			vertex_program_ref Compositor/Compositor_vs
+			{
+			}
+			
+			fragment_program_ref Compositor/Invert_ps
+			{
+			}
+
+			texture_unit
+			{
+			}
+		}
+	}
+}
