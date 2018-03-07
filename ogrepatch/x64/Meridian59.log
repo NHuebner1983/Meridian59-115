@@ -1,0 +1,138 @@
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
++                                      Meridian 59                                        +
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+6:33:48 PM   Client              Info    Initializing client
+6:33:48 PM   Client              Info    Process ID: 4608 MainThread: 1
+6:33:48 PM   Logger              Info    Starting logger.
+6:33:48 PM   Client              Info    Starting client
+6:33:54 PM   ControllerRoom      Info    Setting AmbientLight to 0
+6:33:54 PM   ControllerRoom      Info    Setting DirectionalLight to 0
+6:33:54 PM   ControllerRoom      Info    Setting AmbientLight to 40
+6:33:54 PM   ControllerRoom      Info    Setting DirectionalLight to 0
+6:33:54 PM   ControllerRoom      Info    Start loading room: necarea3.roo
+6:33:54 PM   ControllerRoom      Info    Textures: 197.354493759183 ms
+6:33:54 PM   ControllerRoom      Info    Geometry: 18.6997126699644 ms
+6:33:54 PM   ControllerRoom      Info    Decoration: 6.4692381232644 ms
+6:33:59 PM   ServerConnection    Info    Connecting to localhost:5959
+6:33:59 PM   ServerConnection    Info    ConnectionState: Connected
+6:33:59 PM   ServerConnection    Info    ConnectionState: Authenticated
+6:33:59 PM   ServerConnection    Info    ConnectionState: Online
+6:33:59 PM   ServerConnection    Info    ServerSaveChange, Old:0 New:2
+6:34:01 PM   ServerConnection    Info    ConnectionState: Playing
+6:34:01 PM   MessageEnrichment   Info    Loaded BP_PLAYER: 31.6300870144278 ms
+6:34:01 PM   MessageEnrichment   Info    Loaded BP_ROOM_CONTENTS: 73.1086893683696 ms
+6:34:01 PM   ControllerRoom      Info    Setting AmbientLight to 249
+6:34:01 PM   ControllerRoom      Info    Setting DirectionalLight to 0
+6:34:01 PM   ControllerRoom      Info    Start loading room: tos.roo
+6:34:02 PM   MessageEnrichment   Info    Loaded BP_INVENTORY: 66.3334084283833 ms
+6:34:02 PM   MessageEnrichment   Info    Loaded BP_SPELLS: 20.297094135216 ms
+6:34:02 PM   ControllerRoom      Info    Textures: 385.013624263054 ms
+6:34:02 PM   ControllerRoom      Info    Geometry: 5.90576390221031 ms
+6:34:02 PM   ControllerRoom      Info    Decoration: 4.74483974176292 ms
+6:34:02 PM   ControllerRoom      Info    Setting AmbientLight to 249
+6:34:02 PM   ControllerRoom      Info    Setting DirectionalLight to 18
+6:34:02 PM   ControllerRoom      Info    Found own avatar: 4427 (Silence)
+6:34:02 PM   DataControllerOgre  Info    BP_ROOM_CONTENTS: 253.429587414557 ms
+6:34:02 PM   DataControllerOgre  Info    BP_INVENTORY: 130.057743040074 ms
+6:34:02 PM   DataControllerOgre  Info    BP_SPELLS: 6.21860186260164 ms
+6:34:07 PM   MessageEnrichment   Info    Loaded BP_PLAYER: 5.02527009389451 ms
+6:34:07 PM   MessageEnrichment   Info    Loaded BP_ROOM_CONTENTS: 2.26304419300141 ms
+6:34:08 PM   ControllerRoom      Info    Setting AmbientLight to 184
+6:34:08 PM   ControllerRoom      Info    Setting DirectionalLight to 18
+6:34:08 PM   ControllerRoom      Info    Start loading room: tosinn.roo
+6:34:08 PM   ControllerRoom      Info    Textures: 350.455614382914 ms
+6:34:08 PM   ControllerRoom      Info    Geometry: 2.02207794447895 ms
+6:34:08 PM   ControllerRoom      Info    Decoration: 0.0316235532227438 ms
+6:34:08 PM   ControllerRoom      Info    Setting AmbientLight to 184
+6:34:08 PM   ControllerRoom      Info    Setting DirectionalLight to 0
+6:34:08 PM   ControllerRoom      Info    Found own avatar: 4427 (Silence)
+6:34:08 PM   DataControllerOgre  Info    BP_ROOM_CONTENTS: 77.7787825297928 ms
+6:34:12 PM   MessageEnrichment   Info    Loaded BP_PLAYER: 0.00235216511282488 ms
+6:34:12 PM   MessageEnrichment   Info    Loaded BP_ROOM_CONTENTS: 0.0878141643224808 ms
+6:34:12 PM   ControllerRoom      Info    Setting AmbientLight to 249
+6:34:12 PM   ControllerRoom      Info    Setting DirectionalLight to 0
+6:34:12 PM   ControllerRoom      Info    Start loading room: tos.roo
+6:34:12 PM   ControllerRoom      Info    Textures: 0.248022743868205 ms
+6:34:12 PM   ControllerRoom      Info    Geometry: 5.3812310814028 ms
+6:34:12 PM   ControllerRoom      Info    Decoration: 1.40685609088177 ms
+6:34:12 PM   ControllerRoom      Info    Setting AmbientLight to 249
+6:34:12 PM   ControllerRoom      Info    Setting DirectionalLight to 18
+6:34:12 PM   ControllerRoom      Info    Found own avatar: 4427 (Silence)
+6:34:12 PM   DataControllerOgre  Info    BP_ROOM_CONTENTS: 57.3118098028826 ms
+6:34:56 PM   MessageEnrichment   Info    Loaded BP_PLAYER: 0.00182946176209953 ms
+6:34:56 PM   MessageEnrichment   Info    Loaded BP_ROOM_CONTENTS: 0.0943479563138681 ms
+6:34:56 PM   ControllerRoom      Info    Setting AmbientLight to 184
+6:34:56 PM   ControllerRoom      Info    Setting DirectionalLight to 18
+6:34:56 PM   ControllerRoom      Info    Start loading room: tosinn.roo
+6:34:56 PM   ControllerRoom      Info    Textures: 0.0692581950715976 ms
+6:34:56 PM   ControllerRoom      Info    Geometry: 1.87441424553981 ms
+6:34:56 PM   ControllerRoom      Info    Decoration: 0.0277032780431909 ms
+6:34:56 PM   ControllerRoom      Info    Setting AmbientLight to 184
+6:34:56 PM   ControllerRoom      Info    Setting DirectionalLight to 0
+6:34:56 PM   ControllerRoom      Info    Found own avatar: 4427 (Silence)
+6:34:56 PM   DataControllerOgre  Info    BP_ROOM_CONTENTS: 15.0031545147649 ms
+6:35:00 PM   ControllerRoom      Info    Setting AmbientLight to 174
+6:35:00 PM   ControllerRoom      Info    Setting DirectionalLight to 0
+6:35:00 PM   ControllerRoom      Info    Setting AmbientLight to 174
+6:35:00 PM   ControllerRoom      Info    Setting DirectionalLight to 0
+6:35:51 PM   MessageEnrichment   Info    Loaded BP_PLAYER: 0.0015681100776419 ms
+6:35:51 PM   MessageEnrichment   Info    Loaded BP_ROOM_CONTENTS: 0.0904276811197633 ms
+6:35:51 PM   ControllerRoom      Info    Setting AmbientLight to 229
+6:35:51 PM   ControllerRoom      Info    Setting DirectionalLight to 0
+6:35:51 PM   ControllerRoom      Info    Start loading room: tos.roo
+6:35:51 PM   ControllerRoom      Info    Textures: 0.200979441549862 ms
+6:35:51 PM   ControllerRoom      Info    Geometry: 5.06499554918264 ms
+6:35:51 PM   ControllerRoom      Info    Decoration: 1.14027737776632 ms
+6:35:51 PM   ControllerRoom      Info    Setting AmbientLight to 229
+6:35:51 PM   ControllerRoom      Info    Setting DirectionalLight to 12
+6:35:51 PM   ControllerRoom      Info    Found own avatar: 4427 (Silence)
+6:35:51 PM   DataControllerOgre  Info    BP_ROOM_CONTENTS: 54.1795099237788 ms
+6:35:56 PM   MessageEnrichment   Info    Loaded BP_PLAYER: 34.2166845866741 ms
+6:35:56 PM   ControllerRoom      Info    Setting AmbientLight to 170
+6:35:56 PM   ControllerRoom      Info    Setting DirectionalLight to 12
+6:35:56 PM   ControllerRoom      Info    Start loading room: tosapoth.roo
+6:35:56 PM   ControllerRoom      Info    Textures: 0.882061918397085 ms
+6:35:56 PM   ControllerRoom      Info    Geometry: 0.651027033687569 ms
+6:35:56 PM   ControllerRoom      Info    Decoration: 0.00967001215030905 ms
+6:35:56 PM   ControllerRoom      Info    Setting AmbientLight to 170
+6:35:56 PM   ControllerRoom      Info    Setting DirectionalLight to 0
+6:35:56 PM   MessageEnrichment   Info    Loaded BP_ROOM_CONTENTS: 55.5806162777153 ms
+6:35:56 PM   ControllerRoom      Info    Found own avatar: 4427 (Silence)
+6:35:56 PM   DataControllerOgre  Info    BP_ROOM_CONTENTS: 41.2274433899292 ms
+6:36:03 PM   MessageEnrichment   Info    Loaded BP_PLAYER: 0.0013067584077362 ms
+6:36:03 PM   MessageEnrichment   Info    Loaded BP_ROOM_CONTENTS: 0.0917344395129476 ms
+6:36:03 PM   ControllerRoom      Info    Setting AmbientLight to 229
+6:36:03 PM   ControllerRoom      Info    Setting DirectionalLight to 0
+6:36:03 PM   ControllerRoom      Info    Start loading room: tos.roo
+6:36:03 PM   ControllerRoom      Info    Textures: 0.243579765316099 ms
+6:36:03 PM   ControllerRoom      Info    Geometry: 4.3888787542528 ms
+6:36:03 PM   ControllerRoom      Info    Decoration: 1.16510578730959 ms
+6:36:03 PM   ControllerRoom      Info    Setting AmbientLight to 229
+6:36:03 PM   ControllerRoom      Info    Setting DirectionalLight to 12
+6:36:03 PM   ControllerRoom      Info    Found own avatar: 4427 (Silence)
+6:36:03 PM   DataControllerOgre  Info    BP_ROOM_CONTENTS: 54.2568700209376 ms
+6:36:11 PM   MessageEnrichment   Info    Loaded BP_PLAYER: 0.00182946174754761 ms
+6:36:11 PM   MessageEnrichment   Info    Loaded BP_ROOM_CONTENTS: 0.0540997976786457 ms
+6:36:11 PM   ControllerRoom      Info    Setting AmbientLight to 174
+6:36:11 PM   ControllerRoom      Info    Setting DirectionalLight to 12
+6:36:11 PM   ControllerRoom      Info    Start loading room: tosinn.roo
+6:36:11 PM   ControllerRoom      Info    Textures: 0.0640311614843085 ms
+6:36:11 PM   ControllerRoom      Info    Geometry: 1.64416341588367 ms
+6:36:11 PM   ControllerRoom      Info    Decoration: 0.0180332658928819 ms
+6:36:11 PM   ControllerRoom      Info    Setting AmbientLight to 174
+6:36:11 PM   ControllerRoom      Info    Setting DirectionalLight to 0
+6:36:11 PM   ControllerRoom      Info    Found own avatar: 4427 (Silence)
+6:36:11 PM   DataControllerOgre  Info    BP_ROOM_CONTENTS: 25.865975722525 ms
+6:36:13 PM   MessageEnrichment   Info    Loaded BP_PLAYER: 0.00182946174754761 ms
+6:36:13 PM   MessageEnrichment   Info    Loaded BP_ROOM_CONTENTS: 0.0825871307170019 ms
+6:36:13 PM   ControllerRoom      Info    Setting AmbientLight to 229
+6:36:13 PM   ControllerRoom      Info    Setting DirectionalLight to 0
+6:36:13 PM   ControllerRoom      Info    Start loading room: tos.roo
+6:36:13 PM   ControllerRoom      Info    Textures: 0.19183213278302 ms
+6:36:13 PM   ControllerRoom      Info    Geometry: 5.08485827682307 ms
+6:36:13 PM   ControllerRoom      Info    Decoration: 1.14053872943623 ms
+6:36:13 PM   ControllerRoom      Info    Setting AmbientLight to 229
+6:36:13 PM   ControllerRoom      Info    Setting DirectionalLight to 12
+6:36:13 PM   ControllerRoom      Info    Found own avatar: 4427 (Silence)
+6:36:13 PM   DataControllerOgre  Info    BP_ROOM_CONTENTS: 54.4314529428375 ms
+6:38:54 PM   ServerConnection    Info    Disconnecting.
