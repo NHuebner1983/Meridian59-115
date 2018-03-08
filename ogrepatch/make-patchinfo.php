@@ -8,10 +8,26 @@ error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
 /**
+ * A basic check if we're using web or command line
+ */
+$is_cli = ! isset($_SERVER['DOCUMENT_ROOT']) || ! $_SERVER['DOCUMENT_ROOT'];
+
+/**
+ * Full script path based on web or command line usage.
+ */
+$full_script_path = $is_cli ? $_SERVER['PWD'] : dirname($_SERVER['SCRIPT_FILENAME']);
+
+if ( $is_cli )
+{
+    echo "\n";
+    echo "Creating patchinfo.txt...";
+}
+
+/**
  * Patch file to save as (absolute)
  * Be sure this is the full path to the patchinfo.txt file.
  */
-$patch_file_save_as = dirname($_SERVER['SCRIPT_FILENAME']) . '/patchinfo.txt';
+$patch_file_save_as = $full_script_path . '/patchinfo.txt';
 
 /**
  * Default backslashes compatible with Ogre Patcher
@@ -41,11 +57,27 @@ catch ( Exception $e )
  */
 if ( $success )
 {
-    echo '<h1 style="font-family: Arial; font-size: 22px; color: green;">Patch file created successfully.</h1>';
+    if ( ! $is_cli )
+    {
+        echo '<h1 style="font-family: Arial; font-size: 22px; color: green;">Patch file created successfully.</h1>';
+    }
+    else
+    {
+        echo "OK\n";
+        echo "\n";
+    }
 }
 else
 {
-    echo '<h1 style="font-family: Arial; font-size: 22px; color: red;">Failed to create patch file.</h1>';
+    if ( ! $is_cli )
+    {
+        echo '<h1 style="font-family: Arial; font-size: 22px; color: red;">Failed to create patch file.</h1>';
+    }
+    else
+    {
+        echo "Failed\n";
+        echo "\n";
+    }
 }
 
 /**
@@ -75,10 +107,17 @@ function makePatch($version = 3, $base_folder = "./*", $patch = [])
 
         $file_name = basename($file);
 
+        if ( stristr($file_name, 'configuration.xml') || stristr($file_name, 'patchinfo.txt') || stristr($file_name, 'metagen') )
+        {
+            // Do not download configuration.xml for the user.
+            continue;
+        }
+
         $extension = strtolower(substr($file, -4, 4));
 
         if ( $extension == '.php' || $extension == '.log' )
         {
+            // Do not download php or log files.
             continue;
         }
 
