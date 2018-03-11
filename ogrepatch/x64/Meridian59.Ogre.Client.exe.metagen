@@ -1904,6 +1904,7 @@ Class Meridian59.Ogre.DroneBot: AutoLayout, AnsiClass, Class, Public
     Meridian59.Data.Models.RoomObject Target : Public
     Int32 target_id : Public
     Int32 target_id_last : Public
+    Int32 face_target_id : Public
     Boolean target_changed : Public
     Single target_last_x : Public
     Single target_last_y : Public
