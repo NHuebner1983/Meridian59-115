@@ -1856,8 +1856,13 @@ Class Meridian59.Ogre.DroneBot: AutoLayout, AnsiClass, Class, Public
     Boolean IsDM : Public
     Int32 assist_id : Public
     Single assist_distance : Public
+    Single assist_leash_distance : Public
     System.String assist_name : Public
     Meridian59.Data.Models.RoomObject AssistPlayer : Public
+    Int32 follow_id : Public
+    Single follow_distance : Public
+    System.String follow_name : Public
+    Meridian59.Data.Models.RoomObject FollowPlayer : Public
     Boolean safe_logon : Public
     Boolean safe_logged_on : Public
     Boolean safe_phase_casted : Public
@@ -1906,7 +1911,10 @@ Class Meridian59.Ogre.DroneBot: AutoLayout, AnsiClass, Class, Public
     Double sleepUntil : Public
     Double currentTick : Public
     Int32 aggro_count : Public
+    Int32 aggro_id : Public
     Boolean aggro : Public
+    Single aggro_distance : Public
+    Single aggro_assist_distance : Public
     Int32 imps : Public
     Int32 toughers : Public
     Boolean allow_fast_attack : Public
@@ -1956,6 +1964,7 @@ Class Meridian59.Ogre.DroneBot: AutoLayout, AnsiClass, Class, Public
     FastAttack(): PrivateScope, Public, HideBySig
     PhaseNow(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
     IsAssistValid(): PrivateScope, Public, HideBySig
+    IsFollowValid(): PrivateScope, Public, HideBySig
     CheckSkipTarget(): PrivateScope, Public, HideBySig
     GetClosestAssistTarget(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
     Tour(): PrivateScope, Public, HideBySig
