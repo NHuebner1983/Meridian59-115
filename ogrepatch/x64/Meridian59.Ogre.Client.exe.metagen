@@ -538,6 +538,7 @@ Class Meridian59.Ogre.ControllerUI+StatusBar: AutoLayout, AnsiClass, Class, Nest
     CEGUI.Window* MTimeValue : Public, Static
     CEGUI.Window* RoomDescription : Public, Static
     CEGUI.Window* RoomValue : Public, Static
+    CEGUI.Window* PasswordButton : Public, Static
     CEGUI.PushButton* Lock : Public, Static
   Methods:
     Initialize(): PrivateScope, Public, Static, HideBySig
@@ -1265,6 +1266,20 @@ Class Meridian59.Ogre.ControllerUI+Login: AutoLayout, AnsiClass, Class, NestedPu
     Initialize(): PrivateScope, Public, Static, HideBySig
     Destroy(): PrivateScope, Public, Static, HideBySig
     ApplyLanguage(): PrivateScope, Public, Static, HideBySig
+Class Meridian59.Ogre.ControllerUI+ChangePassword: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    CEGUI.Window* Window : Public, Static
+    CEGUI.Editbox* OldPassword : Public, Static
+    CEGUI.Window* OldPasswordDesc : Public, Static
+    CEGUI.Editbox* NewPassword : Public, Static
+    CEGUI.Window* NewPasswordDesc : Public, Static
+    CEGUI.Editbox* ConfirmPassword : Public, Static
+    CEGUI.Window* ConfirmPasswordDesc : Public, Static
+    CEGUI.PushButton* Change : Public, Static
+  Methods:
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    Destroy(): PrivateScope, Public, Static, HideBySig
+    ApplyLanguage(): PrivateScope, Public, Static, HideBySig
 Class Meridian59.Ogre.ControllerUI+Options: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
   Fields:
     CEGUI.FrameWindow* Window : Public, Static
@@ -1553,6 +1568,8 @@ Struct Meridian59.Ogre.UICallbacks+LootList: AutoLayout, AnsiClass, Class, Neste
 Struct Meridian59.Ogre.UICallbacks+GoList: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
   :System.ValueType
 Struct Meridian59.Ogre.UICallbacks+Login: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Meridian59.Ogre.UICallbacks+ChangePassword: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
   :System.ValueType
 Struct Meridian59.Ogre.UICallbacks+Options: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
   :System.ValueType

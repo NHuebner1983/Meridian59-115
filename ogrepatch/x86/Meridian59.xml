@@ -237,6 +237,18 @@
             </summary>
             <param name="Message"></param>
         </member>
+        <member name="M:Meridian59.Client.BaseClient`4.HandlePasswordOKMessage(Meridian59.Protocol.GameMessages.PasswordOKMessage)">
+            <summary>
+            Successful password change
+            </summary>
+            <param name="Message"></param>
+        </member>
+        <member name="M:Meridian59.Client.BaseClient`4.HandlePasswordNotOKMessage(Meridian59.Protocol.GameMessages.PasswordNotOKMessage)">
+            <summary>
+            Successful password change
+            </summary>
+            <param name="Message"></param>
+        </member>
         <member name="M:Meridian59.Client.BaseClient`4.HandleMessageMessage(Meridian59.Protocol.GameMessages.MessageMessage)">
             <summary>
             
@@ -396,6 +408,13 @@
             <summary>
             Tries to invite the specified player (by object ID) into your guild
             </summary>
+        </member>
+        <member name="M:Meridian59.Client.BaseClient`4.SendReqChangePassword(System.String,System.String)">
+            <summary>
+            Requests to change user's password
+            </summary>
+            <param name="PasswordOld"></param>
+            <param name="PasswordNew"></param>
         </member>
         <member name="M:Meridian59.Client.BaseClient`4.SendUserCommandGuildSetPassword(System.String)">
             <summary>
