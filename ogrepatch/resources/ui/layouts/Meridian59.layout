@@ -633,17 +633,23 @@
             <Property name="Font" value="Berenika-8-Bold" />
          </Window>
          
+         <!-- PasswordButton -->
+         <Window type="TaharezLook/MiniButton" name="StatusBar.PasswordButton" >
+            <Property name="Area" value="{{0,816},{0,3},{0,920},{0,20}}" />
+            <Property name="Text" value="Password" />
+         </Window>
+		 
          <!-- RoomName -->
          <Window type="TaharezLook/LabelWhite" name="StatusBar.RoomDescription" >
             <Property name="Text" value="Zone:" />
-            <Property name="Area" value="{{0,801},{0,0},{0,841},{0,23}}" />
+            <Property name="Area" value="{{0,935},{0,0},{0,976},{0,23}}" />
             <Property name="HorzFormatting" value="LeftAligned" />
             <Property name="VertFormatting" value="CentreAligned" />
             <Property name="Font" value="Berenika-8-Bold" />
          </Window>
          <Window type="TaharezLook/LabelWhite" name="StatusBar.RoomValue" >
             <Property name="Text" value="-" />
-            <Property name="Area" value="{{0,846},{0,0},{1,-24},{0,23}}" />
+            <Property name="Area" value="{{0,976},{0,0},{1,-24},{0,23}}" />
             <Property name="HorzFormatting" value="LeftAligned" />
             <Property name="VertFormatting" value="CentreAligned" />
             <Property name="Font" value="Berenika-8-Bold" />
@@ -2937,7 +2943,79 @@
             <Property name="Area" value="{{0.5,-125},{0,195},{0.5,95},{0,220}}" />
          </Window>
       </Window>
+
+
+	  
+	  
+	  
+      <!-- ChangePasswordWindow -->
+      <Window type="TaharezLook/FrameWindowOrnamental" name="ChangePassword" >
+         <Property name="TitlebarEnabled" value="False" />
+         <Property name="CloseButtonEnabled" value="True" />
+         <Property name="Text" value="Change Password" />
+         <Property name="Area" value="{{0,0},{0,0},{1,0},{1,0}}" />
+         <Property name="Size" value="{{0,360},{0,280}}" />
+         <Property name="MinSize" value="{{0,360},{0,280}}" />
+         <Property name="MaxSize" value="{{0,360},{0,280}}" />
+         <Property name="SizingEnabled" value="FALSE" />
+         <Property name="Position" value="{{0.5,-180},{0.4,-130}}" />
+
+         <Window type="TaharezLook/LabelWhite" name="ChangePassword.Title" >
+            <Property name="Text" value="NEW PASSWORD" />
+            <Property name="Area" value="{{0.5,-155},{0,25},{0.5,155},{0,55}}" />
+            <Property name="HorzFormatting" value="CentreAligned" />
+            <Property name="Font" value="Berenika-20-Bold" />
+         </Window>
          
+         <!-- OldPassword -->
+         <Window type="TaharezLook/Label" name="ChangePassword.OldPasswordDescription" >
+            <Property name="Text" value="Current Password" />
+            <Property name="Area" value="{{0.5,-155},{0,90},{0.5,-35},{0,115}}" />         
+            <Property name="HorzFormatting" value="LeftAligned" />               
+         </Window>
+         <Window type="TaharezLook/Editbox" name="ChangePassword.OldPassword" >
+            <Property name="Area" value="{{0.5,-35},{0,90},{0.5,155},{0,115}}" />
+            <Property name="TextParsingEnabled" value="False" />               
+            <Property name="MaskText" value="True" />
+         </Window>
+         
+         <!-- NewPassword -->
+         <Window type="TaharezLook/Label" name="ChangePassword.NewPasswordDescription" >
+            <Property name="Text" value="New Password" />
+            <Property name="Area" value="{{0.5,-155},{0,120},{0.5,-35},{0,145}}" />         
+            <Property name="HorzFormatting" value="LeftAligned" />               
+         </Window>
+         <Window type="TaharezLook/Editbox" name="ChangePassword.NewPassword" >
+            <Property name="Area" value="{{0.5,-35},{0,120},{0.5,155},{0,145}}" />
+            <Property name="TextParsingEnabled" value="False" />
+            <Property name="MaskText" value="True" />
+         </Window>
+
+         <!-- ConfirmPassword -->
+         <Window type="TaharezLook/Label" name="ChangePassword.ConfirmPasswordDescription" >
+            <Property name="Text" value="Confirm Password" />
+            <Property name="Area" value="{{0.5,-155},{0,150},{0.5,-35},{0,175}}" />         
+            <Property name="HorzFormatting" value="LeftAligned" />               
+         </Window>
+         <Window type="TaharezLook/Editbox" name="ChangePassword.ConfirmPassword" >
+            <Property name="Area" value="{{0.5,-35},{0,150},{0.5,155},{0,175}}" />
+            <Property name="TextParsingEnabled" value="False" />
+            <Property name="MaskText" value="True" />
+         </Window>
+
+         <!-- Change -->
+         <Window type="TaharezLook/Button" name="ChangePassword.Change" >
+            <Property name="Text" value="Change Password" />
+            <Property name="Area" value="{{0.5,-155},{0,205},{0.5,155},{0,230}}" />
+         </Window>
+      </Window>
+
+
+
+
+
+
+	  
       <!-- Options -->
       <Window type="TaharezLook/FrameWindow" name="Options" >
          <Property name="Text" value="Options" />
