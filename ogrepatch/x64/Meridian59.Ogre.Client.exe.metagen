@@ -1251,6 +1251,7 @@ Class Meridian59.Ogre.ControllerUI+GoList: AutoLayout, AnsiClass, Class, NestedP
     Destroy(): PrivateScope, Public, Static, HideBySig
     ApplyLanguage(): PrivateScope, Public, Static, HideBySig
     LoadList(): PrivateScope, Public, Static, HideBySig
+    UnloadList(): PrivateScope, Public, Static, HideBySig
     ItemAdd(Int32, basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, basic_string<char\,std::char_traits<char>\,std::allocator<char> >*): PrivateScope, Public, Static, HideBySig
 Class Meridian59.Ogre.ControllerUI+Login: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
   Fields:
