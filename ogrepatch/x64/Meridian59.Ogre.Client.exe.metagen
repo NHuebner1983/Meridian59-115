@@ -1874,6 +1874,11 @@ Class Meridian59.Ogre.OgreClientConfig: AutoLayout, AnsiClass, Class, Public, Be
 Class Meridian59.Ogre.DroneBot: AutoLayout, AnsiClass, Class, Public
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Fields:
+    Meridian59.Data.Models.GuildInfo myGuild : Public
+    Boolean changed_users : Public
+    Boolean IsGuilded : Public
+    Boolean HasGuildHall : Public
+    Int32 last_avatar_id : Public
     Boolean IsDM : Public
     Int32 assist_id : Public
     Single assist_distance : Public
@@ -2004,6 +2009,8 @@ Class Meridian59.Ogre.OgreClient: AutoLayout, AnsiClass, Class, Public, BeforeFi
   :Meridian59.Client.SingletonClient`5[Meridian59.Ogre.GameTickOgre,Meridian59.Ogre.ResourceManagerOgre,Meridian59.Ogre.DataControllerOgre,Meridian59.Ogre.OgreClientConfig,Meridian59.Ogre.OgreClient]
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Fields:
+    Int32 ServerTimeOffset : Public
+    System.String ServerTimezoneName : Public
     Boolean RecreateWindow : Public
     Meridian59.Ogre.Drone Drone IsByValue : Public, InitOnly
   Properties:
