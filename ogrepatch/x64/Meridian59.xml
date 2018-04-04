@@ -5417,6 +5417,106 @@
             
             </summary>
         </member>
+        <member name="T:Meridian59.Data.Models.WebInfo">
+            <summary>
+            A set of information for the web console
+            </summary>
+        </member>
+        <member name="P:Meridian59.Data.Models.WebInfo.ServerResponses">
+            <summary>
+            Received text responses from server
+            </summary>
+        </member>
+        <member name="P:Meridian59.Data.Models.WebInfo.TrackedObjects">
+            <summary>
+            Tracking responses to 'show object' responses here
+            </summary>
+        </member>
+        <member name="M:Meridian59.Data.Models.WebInfo.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="F:Meridian59.Data.Models.WebInfo.DEFAULTCOMMANDS">
+            <summary>
+            Default commands for blakserv.
+            Please keep alphabetically ordered.
+            </summary>
+            <remarks>
+            {0} are variables for possible use of String.Format() function.
+            Like %i in sprintf()
+            </remarks>
+        </member>
+        <member name="T:Meridian59.Data.Models.WebInfoObject">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meridian59.Data.Models.WebInfoObject.ID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meridian59.Data.Models.WebInfoObject.ClassName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meridian59.Data.Models.WebInfoObject.Properties">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meridian59.Data.Models.WebInfoObject.#ctor">
+            <summary>
+            Empty Constructor
+            </summary>
+        </member>
+        <member name="M:Meridian59.Data.Models.WebInfoObject.#ctor(System.UInt32,System.String,System.Collections.Generic.IEnumerable{Meridian59.Data.Models.WebInfoProperty})">
+            <summary>
+            Constructor by values
+            </summary>
+        </member>
+        <member name="T:Meridian59.Data.Models.WebInfoProperty">
+            <summary>
+            A property of a blakserv object described by
+            Name (like 'piRow'), Type (like 'INT') and Value (like '22')
+            </summary>
+        </member>
+        <member name="P:Meridian59.Data.Models.WebInfoProperty.PropertyName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meridian59.Data.Models.WebInfoProperty.PropertyType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meridian59.Data.Models.WebInfoProperty.PropertyValue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meridian59.Data.Models.WebInfoProperty.#ctor">
+            <summary>
+            Empty Constructor
+            </summary>
+        </member>
+        <member name="M:Meridian59.Data.Models.WebInfoProperty.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructor by values
+            </summary>
+            <param name="PropertyName"></param>
+            <param name="PropertyType"></param>
+            <param name="PropertyValue"></param>
+        </member>
+        <member name="M:Meridian59.Data.Models.WebInfoProperty.Clear(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="RaiseChangedEvent"></param>
+        </member>
         <member name="T:Meridian59.Data.Models.WelcomeInfo">
             <summary>
             A set of information for avatar selection with MOTD.
@@ -8159,6 +8259,11 @@
         <member name="P:Meridian59.Data.DataController.AdminInfo">
             <summary>
             Admin info (for admin console) and more.
+            </summary>
+        </member>
+        <member name="P:Meridian59.Data.DataController.WebInfo">
+            <summary>
+            Web info (for web browser) and more.
             </summary>
         </member>
         <member name="P:Meridian59.Data.DataController.Trade">
