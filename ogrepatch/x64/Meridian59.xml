@@ -939,6 +939,11 @@
             </summary>
             <param name="Action"></param>
         </member>
+        <member name="M:Meridian59.Client.BaseClient`4.ShowWebForm">
+            <summary>
+            Overide by OgreClient
+            </summary>
+        </member>
         <member name="M:Meridian59.Client.BaseClient`4.Suicide">
             <summary>
             By default this function does nothing.
@@ -8384,6 +8389,12 @@
             <summary>
             Your currently selected targetobject or NULL.
             Use TargetID to assign.
+            </summary>
+        </member>
+        <member name="P:Meridian59.Data.DataController.AvatarSpeed">
+            <summary>
+            The current allowed speed of your avatar.
+            May change based on personal buffs.
             </summary>
         </member>
         <member name="P:Meridian59.Data.DataController.AvatarObject">

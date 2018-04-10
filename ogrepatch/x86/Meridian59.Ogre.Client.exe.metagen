@@ -3,11 +3,7 @@ Assembly Meridian59.Ogre.Client, Version=1.0.5.3, Culture=neutral, PublicKeyToke
 	hash=SHA1, flags=PublicKey
 Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
-Assembly CefSharp.Core, Version=63.0.3.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138: 
-	hash=None, flags=None
-Assembly CefSharp, Version=63.0.3.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138: 
-	hash=None, flags=None
-Assembly CefSharp.WinForms, Version=63.0.3.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138: 
+Assembly MaterialSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=83109216d390d504: 
 	hash=None, flags=None
 Assembly Meridian59.AdminUI, Version=1.3.0.1, Culture=neutral, PublicKeyToken=1225cfdeb89f7c66: 
 	hash=None, flags=None
@@ -2057,7 +2053,7 @@ Class Meridian59.Ogre.OgreClient: AutoLayout, AnsiClass, Class, Public, BeforeFi
     Disconnect(): PrivateScope, Public, Virtual, HideBySig
     RenderManually(): PrivateScope, Public, HideBySig
     ShowAdminForm(): PrivateScope, Public, HideBySig
-    ShowWebForm(): PrivateScope, Public, HideBySig
+    ShowWebForm(): PrivateScope, Public, Virtual, HideBySig
     SendUseCharacterMessage(ObjectID, Boolean(HasFieldMarshal), String): PrivateScope, Public, Virtual, HideBySig
     SendReqQuit(): PrivateScope, Public, Virtual, HideBySig
 Struct Meridian59.Ogre.ImageBuilderType: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
