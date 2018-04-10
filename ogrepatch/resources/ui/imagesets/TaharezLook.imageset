@@ -293,6 +293,7 @@
    <Image height="24" name="ActionAttackDisabled"       width="24" xPos="30" yPos="280" />
    <Image height="24" name="ActionBuy"             width="24" xPos="55" yPos="255" />
    <Image height="24" name="ActionBuyDisabled"       width="24" xPos="55" yPos="280" />
+   <Image height="24" name="ActionWeb"          width="24" xPos="130" yPos="305" />
    <Image height="24" name="ActionInspect"          width="24" xPos="80" yPos="255" />
    <Image height="24" name="ActionInspectDisabled"    width="24" xPos="80" yPos="280" />
    <Image height="24" name="ActionLoot"             width="24" xPos="105" yPos="255" />
